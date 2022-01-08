@@ -17,16 +17,21 @@ export default function Projects() {
     ]
     return (
         <>
-            {projects.map(({imgScr, title})=>(
-                <div>
+            {projects.map(({imgScr, title}, index)=>(
+                <div key={index}>
                     <img src={`images/HomePage/${imgScr}`} alt="task"/>
-                    <p>{title}</p>
+                    <p className='inter bold f20 ml5 mt10 text-blue-400'>{title}</p>
                 </div>
                 // <Task task={task} onDelete={onDelete} onToggle={onToggle}/>
             ))}
-            <div>
-                <img src={`images/HomePage/${projects[projects.length-1].imgScr}`} alt=""/>
-                <Link href={'/'}>See more Projects</Link>
+            <div className='relative'>
+                <img src={`images/HomePage/${projects[projects.length-1].imgScr}`} className='h-full' alt=""/>
+                <div className='absolute position-full backdrop flex flex-cols'>
+                    <div className='m-auto f25 text-white'>
+                        <Link href={'/'}>See more Projects</Link>
+                    </div>
+                    
+                </div>            
             </div>
         </>               
         

@@ -45,17 +45,18 @@ export default function Testimonials() {
     ]
     return (
         <>
-            {testimonials.map(({imgScr, name, job, rating,description})=>(
-                <div>
+            {testimonials.map(({imgScr, name, job, rating,description}, index)=>(
+                <div key={index} className='monte bg-white py30 px35 bdr5 bd-g'>
                     <div>
+                        {index}
                         {rating}
                     </div>
-                    <p>{description}</p>
-                    <div>
+                    <p className='ls2 text-gray-300 bold600 f14 lh24 mt10'>{description}</p>
+                    <div className='mt20 flex gap10'>
                         <img src={`images/HomePage/${imgScr}`} alt=""/>
-                        <div>
-                            <p>{name}</p>
-                            <p>{job}</p>
+                        <div className='align-self-center'>
+                            <p className='ls2 f14 bold600 text-yellow'>{name}</p>
+                            <p className='ls2 f14 bold600 mt5 text-blue-300'>{job}</p>
                         </div>
                     </div>
                 </div>
