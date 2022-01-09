@@ -1,4 +1,7 @@
 import Link from 'next/link'
+import { useMediaQuery } from 'react-responsive';
+
+
 import Nav from '../components/Nav'
 import Welcome from '../components/Welcome'
 import Whatwedo from '../components/Whatwedo'
@@ -8,30 +11,36 @@ import Testimonials from '../components/Testimonials'
 import Team from '../components/Team'
 import Footer from '../components/Footer'
 import ContactForm from '../components/ContactForm'
-import {FaArrowCircleDown, FaArrowCircleRight} from 'react-icons/fa'
+// "dev": "(if exist .next rd /s /q .next 2>null) && next dev",
+import {FaArrowCircleDown} from 'react-icons/fa'
 
 export default function Home() {
+  const onTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
   return (
-    <div>
+    <div className='x-hidden'>
+    {/* <div> */}
       <Nav/>
       <Welcome/>
-      <h4 className='f36 ct lh48 bold500 mt50 mb50 text-blue'>You need everything to stand out right!</h4>
-      <div className='grid grid3 gap20 mx20p'>
+      <h4 className={`${onTabletOrMobile?'f21 px5':'f36'} ct lh48 bold500 mt50 mb50 text-blue`}>You need everything to stand out right!</h4>
+      <div className={`grid ${onTabletOrMobile?'gapy40':'grid3 gap20'} mx20p`}>
         <Whatwedo/>
       </div>
       <div className='mt50'>
-        <h2 className='ct ptserif bold f54 lh80 mb30 text-red'>Our Services</h2>
-        <div className='relative'>
+        <h2 className={`ct ${onTabletOrMobile?'f34':'f54'} ptserif bold lh80 mb30 text-red`}>Our Services</h2>
+        <div className={`${onTabletOrMobile?'d-none':'relative'}`}>
           <div className='flex space-between absolute left0 right0 mt10 mx10'>
             <h5 className='text-white f36'>Application and Website Development</h5>
             {/* icons */}
-            <p className='f36'>Icons</p>
+            <a href="/">
+              <FaArrowCircleDown size='30' fill='#FFFFFF'/>
+            </a>
+            
           </div>
           <div>
             <img src="images/HomePage/Brandr hero 03 1.png" alt="ss" className='max-w-full'/>  
           </div>
         </div>
-        <div className='mt50 px5'>
+        <div className={`${onTabletOrMobile?'d-none':'rmt50 px5'}`}>
           <h5 className='bold500 f36 mb10 text-blue'>Light, Fast & Powerful Websites</h5>
           <div className='grid grid2'>
             <p  className='f16 text-blue-500 lh26'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
@@ -46,18 +55,18 @@ export default function Home() {
             
           </div>
         </div>
-        <div className='px5 pr10 mt30'>
+        <div className={`${onTabletOrMobile?'d-none':'px5 pr10 mt30'}`}>
           <h3 className='bold500 f36 mb10 text-gray-200'>See featured Case Studies</h3>
           <div className='grid gapx10 grid4 '>
             <Projects/>
           </div>
         </div>
-        <div className='mt50'>
+        <div className={`${onTabletOrMobile?'mt30':'mt50'}`}>
           <Skillsets/>
         </div>
       </div>
       <div className='px5 mt50'>
-        <h4 className='f36 bold500 text-blue mb30 afterdiv'>ABOUT US</h4>
+        <h4 className={`${onTabletOrMobile?'f22':'f36'} bold500 text-blue mb30 afterdiv`}>ABOUT US</h4>
         <div className='grid grid2-60-40 space-between'>
           <div className=''>
             <h2 className='serif f84 bold text-red lh80 mb20'>We are founded
