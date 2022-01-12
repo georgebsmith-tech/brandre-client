@@ -76,6 +76,36 @@ ul{
 .w-screen{
   width: 100vw;
 }
+.w-70screen{
+  width: 80vw;
+}
+.w-75screen{
+  width: 62.5vw;
+}
+.w-42screen{
+  width: 43.5vw;
+}
+.w-25screen{
+  width: 23.5vw;
+}
+.w-200{
+  width: 200px;
+}
+.w-300{
+  width: 300px;
+}
+.w-150{
+  width: 150px;
+}
+.w-50{
+  width: 50px;
+}
+.h-50{
+  height: 50px;
+}
+.h-200{
+  height: 200px;
+}
 .h-screen{
   height:100vh;
 }
@@ -153,6 +183,9 @@ ul{
 .lh36{
   line-height: 36px;
 }
+.lh37{
+  line-height: 37px;
+}
 .lh18{
   line-height: 18px;
 }
@@ -184,6 +217,10 @@ ul{
 .px10{
   padding-left: 10%;
   padding-right: 10%;
+}
+.px15{
+  padding-left: 15%;
+  padding-right: 15%;
 }
 .pl10per{
   padding-left: 10%;
@@ -343,7 +380,12 @@ cursor:pointer;
 }
 /* font-family: Montserrat; */
 
-
+.gradient-1{
+  background: linear-gradient(to bottom, #A2A3E2 82%, #FFFFFF 30%);
+}
+.gradient-2{
+  background: radial-gradient(circle at top, #0E0A5C 95%, #A2A3E2 95.1%);
+}
 
 .bg-orange{
   background-color:#F86F1F;
@@ -389,6 +431,8 @@ cursor:pointer;
 }
 .w90{
   width: 90%;
+}
+.bgblue{
   border: 1px solid #364067;
 }
 .py10{
@@ -413,6 +457,9 @@ cursor:pointer;
 }
 .py50{
   padding-top: 50px;
+  padding-bottom: 50px;
+}
+.pb50{
   padding-bottom: 50px;
 }
 .p20{
@@ -538,6 +585,9 @@ cursor:pointer;
   justify-self: center;
   align-self: center;
 }
+.justify-self-ct{
+  justify-self: center;
+}
 .align-self-center{
   align-self: center;
 }
@@ -567,6 +617,10 @@ cursor:pointer;
 
 .f27{
   font-size: 2.7rem;
+}
+
+.f29{
+  font-size: 2.9rem;
 }
 .f25{
   font-size: 2.5rem;
@@ -607,14 +661,14 @@ box-shadow: 0 3px 20px #00000029;
 }
 
 .f19{
-  font-size: 19px;
+  font-size: 1.9rem;
 }
 .f54{
   font-size: 54px;  
 }
 
 .f33{
-  font-size: 33px;
+  font-size: 3.3rem;
 }
 
 .mt30{
@@ -665,7 +719,18 @@ box-shadow: 0 3px 20px #00000029;
   display: grid;
 }
 
-
+.order-1{
+  order: 1;
+}
+.order-2{
+  order: 2;
+}
+.order-3-{
+  order: 3;
+}
+.order-4-{
+  order: 4;
+}
 .grid7{
 grid-template-columns: repeat(7,1fr);
 }
@@ -673,6 +738,9 @@ grid-template-columns: repeat(7,1fr);
   grid-template-columns: repeat(6,1fr);
 }
   
+.grid-auto-flow{
+  grid-auto-flow: column;
+}
 
 .nb {
   white-space: nowrap;
@@ -680,6 +748,12 @@ grid-template-columns: repeat(7,1fr);
 
 .cg10{
   column-gap: 10px;
+}
+.gapx10{
+  column-gap: 10px;
+}
+.gapx15{
+  column-gap: 15px;
 }
 .cg60{
   column-gap: 80px;
@@ -717,6 +791,9 @@ grid-template-columns: repeat(7,1fr);
 
 .bdgray{
   border: 1px solid #707070;
+}
+.bdblue{
+  border: 1px solid #040320
 }
 
 .round{
@@ -774,6 +851,12 @@ grid-template-columns: repeat(7,1fr);
 .grid2-60-40{
   grid-template-columns:repeat(2,55% 45%);
 }
+.grid2-20-80{
+  grid-template-columns:repeat(2,25% 75%);
+}
+/* .grid2-90-10{
+  grid-template-columns:repeat(2,55% 45%);
+} */
 
 .gap10{
   gap: 10px;
@@ -861,7 +944,9 @@ grid-template-columns: repeat(7,1fr);
 .pl20{
   padding-left: 20px;
 }
-
+.pl10px{
+  padding-left: 10px;
+  }
 
 .f28{
   font-size: 2.8rem;
@@ -886,6 +971,9 @@ grid-template-columns: repeat(7,1fr);
 .hoverflow-hidden{
   overflow: hidden;
 }
+.ov-auto{
+  overflow: auto;
+}
 
 .pt30{
   padding-top: 30px;
@@ -903,9 +991,15 @@ grid-template-columns: repeat(7,1fr);
 .ct{
   text-align: center;
 }
+.jt{
+  text-align: justify;
+}
 
 .f12{
   font-size: 1.2rem;
+}
+.f11{
+  font-size: 1.1rem;
 }
 .f15{
   font-size: 1.5rem;

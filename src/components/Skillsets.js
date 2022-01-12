@@ -16,7 +16,7 @@ export default function Skillsets() {
     return (
         <>
             {skills.map((skill, index) =>
-                <div key={index} className='w-full bg-blue-200 flex space-between px5 py10 bdgray'>
+                <div key={index} className={`${onTabletOrMobile?'bdblue py20':'bdgray py10'} w-full bg-blue-200 flex space-between px5 `}>
                     <p className={`${onTabletOrMobile?'f16 align-self-center':'f36'} bold400 text-white`}>{skill}</p>
                     <Link href={'/'}>
                         <a><FaArrowCircleRight size='30' fill='#FFFFFF'/></a>

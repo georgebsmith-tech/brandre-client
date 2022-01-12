@@ -1,5 +1,9 @@
 import Link from 'next/link'
+
+import { useMediaQuery } from 'react-responsive';
+
 export default function Team() {
+    const onTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
     const team=[{
         imgScr:'Rectangle 7.png',
         name:'Regina Miles',
@@ -27,11 +31,11 @@ export default function Team() {
     return (
         <>
             {team.map(({imgScr, name, job}, index)=>(
-                <div key={index}>
-                    <img src={`images/HomePage/${imgScr}`} alt=""/>
+                <div key={index} className={`${onTabletOrMobile?'flex flex-cols align-center':null}`}>
+                    <img src={`images/HomePage/${imgScr}`} alt="" className={`${onTabletOrMobile?'w-150':null}`}/>
                     <div>
-                        <p className='ct bold f36 mb5 text-white poppins'>{name}</p>
-                        <p className='ct italic f18 text-white opensans'>{job}</p>
+                        <p className={`${onTabletOrMobile?'f23':'f36'} ct bold mb5 text-white poppins`}>{name}</p>
+                        <p className={`${onTabletOrMobile?null:null} ct italic f18 text-white opensans`}>{job}</p>
                     </div>
                 </div>
             ))}

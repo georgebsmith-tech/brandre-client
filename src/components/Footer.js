@@ -1,12 +1,14 @@
 import Link from 'next/link'
-export default function Footer() {
+import { useMediaQuery } from 'react-responsive';
 
+export default function Footer() {
+    const onTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
     return (
         <footer>
-            <div className='bg-blue-300 pl10per pr10per py50'>
+            <div className={`${onTabletOrMobile?'px10':'pl10per pr10per'} bg-blue-300 py50`}>
                 <div className='mb30'>
-                    <div className='flex space-between'>
-                        <h5 className='monte bold f24 ls1 mb10 text-white'>Follow @Brandr.ng </h5>
+                    <div className={` ${onTabletOrMobile?'flex-cols align-center gapy20 mb20':null} flex space-between`}>
+                        <h5 className={`${onTabletOrMobile?'f20':'f24'} monte bold ls1 mb10 text-white`}>Follow @Brandr.ng </h5>
                         <div className='flex space-between flexalign-start gapx20'>
                             <img src="images/HomePage/icons/facebook.png" alt=""/>
                             <img src="images/HomePage/icons/twitter.png" alt=""/>
@@ -15,9 +17,9 @@ export default function Footer() {
                             {/* fb,twitter, insta, youtube */}
                         </div>
                     </div>
-                    <hr className='w90'/>
+                    <hr className={`${onTabletOrMobile?'full-width':'w90'} bgblue `}/>
                 </div>
-                <ul className='grid grid5'>
+                <ul className={`grid ${onTabletOrMobile?'grid2':'grid5'}`}>
                     <li>
                         <p className='monte bold ls1 mb15 text-white f16'>Company Info</p>
                         <ul>
@@ -68,7 +70,7 @@ export default function Footer() {
             
             
             <div className='bg-red pl10per py25'>
-                <p className='bold600 ls2 monte f14 text-white'>Made With Love By BrandR All Right Reserved 2022</p>
+                <p className={`bold600 ls2 monte ${onTabletOrMobile?'f11':'f14'} text-white`}>Made With Love By BrandR All Right Reserved 2022</p>
             </div>
         </footer>
         
