@@ -12,7 +12,7 @@ import Team from '../components/Team'
 import Footer from '../components/Footer'
 import ContactForm from '../components/ContactForm'
 // "dev": "(if exist .next rd /s /q .next 2>null) && next dev",
-import {FaArrowCircleDown} from 'react-icons/fa'
+import {FaArrowCircleDown, FaArrowDown} from 'react-icons/fa'
 
 export default function Home() {
   const onTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
@@ -22,7 +22,7 @@ export default function Home() {
       <Nav/>
       <Welcome/>
       <h4 className={`${onTabletOrMobile?'f21 px5':'f36'} ct lh48 bold500 mt50 mb50 text-blue`}>You need everything to stand out right!</h4>
-      <div className={`grid ${onTabletOrMobile?'gapy40 mb30':'grid3 gap20'} mx20p`}>
+      <div className={`grid ${onTabletOrMobile?'mb30 gapy55':'grid3 gap20'} mx20p`}>
         <Whatwedo/>
       </div>
       <div className='mt50'>
@@ -31,17 +31,17 @@ export default function Home() {
           <div className='flex space-between absolute left0 right0 mt10 mx10'>
             <h5 className='text-white f36'>Application and Website Development</h5>
             {/* icons */}
-            <a href="/">
-              <FaArrowCircleDown size='30' fill='#FFFFFF'/>
+            <a href="/" className='bd-w p5 round'>
+              <FaArrowDown size='30' fill='#FFFFFF'/>
             </a>
             
           </div>
           <div>
-            <img src="images/HomePage/Brandr hero 03 1.png" alt="ss" className='max-w-full'/>  
+            <img src="images/HomePage/Brandr hero 03 1.png" alt="ss" className='w-screen max-w-full'/>  
           </div>
         </div>
         <div className={`${onTabletOrMobile?'d-none':'mt100 px5'}`}>
-          <h5 className='bold5ski00 f36 mb10 text-blue'>Light, Fast &amp; Powerful Websites</h5>
+          <h5 className='bold500 f36 mb10 text-blue'>Light, Fast &amp; Powerful Websites</h5>
           <div className='grid grid2'>
             <p  className='f16 text-blue-500 lh26'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
             {/* <Link href={'/'}> <a className='mt10 bold f18 ct py20 px24 bg-blue-200'>Get in touch</a></Link> */}
@@ -57,7 +57,7 @@ export default function Home() {
         </div>
         <div className={`${onTabletOrMobile?'d-none':'px5 pr10 mt30'}`}>
           <h3 className='bold500 f36 mb10 text-gray-200'>See featured Case Studies</h3>
-          <div className='grid gapx10 grid4 '>
+          <div className='grid gapx20 grid4 '>
             <Projects/>
           </div>
         </div>

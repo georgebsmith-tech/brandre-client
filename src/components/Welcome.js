@@ -12,7 +12,7 @@ export default function Welcome() {
                 <p className={`${onTabletOrMobile? 'lh13 f13 -ls2em mt20':'f24 lh32 ml-5 mt35'} inter bold500 text-white `}>With our expertise, we fuel your social media and create apps that promote engaging experience for your business.</p>
             </div>
             <div className={`${onTabletOrMobile? 'mt50':'cliptop w-screen max-w-full x-hidden'}`}>
-                <img src="images/HomePage/Brandr hero 01 1.png" alt="" className={`${onTabletOrMobile? '-ml25per full-width':'max-w-full max-h-full'}`}/>
+                <img src="images/HomePage/Brandr hero 01 1.png" alt="" className={`${onTabletOrMobile? '-ml25per full-width':'max-w-full max-h-full w-screen'}`}/>
             </div>
         </div>
     )

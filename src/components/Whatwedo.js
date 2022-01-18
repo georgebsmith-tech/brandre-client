@@ -18,7 +18,7 @@ export default function Whatwedo() {
     return (
         <>
             {tasks.map(({imgScr, title, description}, index)=>(
-                <div key={index} className='flex flex-cols box'>
+                <div key={index} className='flex flex-cols box px25 py35'>
                     <img src={`images/HomePage/${imgScr}`} alt="task" className='mx-auto'/>
                     <div className='ct'>
                         <p className='f16 mt10 mb10 text-blue bold500'>{title}</p>
