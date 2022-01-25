@@ -9,7 +9,7 @@ export default function Nav() {
         <div className={`${onTabletOrMobile?'block self-end': 'grid'} grid3 p10`}>
             <div className={`f14 ${onTabletOrMobile? 'd-none':'flex space-around'}`}>
                 <Link href='p20 text-white'><a className='nb p15 text-white'>Home</a></Link>
-                <Link href='p20 text-white'><a className='nb p15 text-white mr10'>Service</a></Link>
+                <Link href='p20 text-white'><a className='nb p15 text-white mr10'>ServiceChanges</a></Link>
                 <Link href='p20 bg-red text-white'><a className='nb p15 text-white'>About Us</a></Link>
                 <Link href='p20 text-white'><a className='nb p15 text-white'>Team</a></Link>  
             </div>
