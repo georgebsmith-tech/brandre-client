@@ -1,14 +1,14 @@
 import Link from 'next/link'
-import { useMediaQuery } from 'react-responsive';
+   import useMediaQuery from '../hooks/UseMediaQuery'
 
 export default function Nav() {
-    const onTabletOrMobile = useMediaQuery({ query: '(min-width: 1224px)' })
+    const onTabletOrMobile = useMediaQuery(1300)
     return (
       <div className={`grid grid2 p10 ${onTabletOrMobile?null:'plr30'} bg-blue space-between z100`}> 
         <img src="./images/HomePage/Frame 1.png" alt=""/>
         <div className={`${onTabletOrMobile?'block self-end': 'grid'} grid3 p10`}>
             <div className={`f14 ${onTabletOrMobile? 'd-none':'flex space-around'}`}>
-                <Link href='p20 text-white'><a className='nb p15 text-white'>HomeChanges</a></Link>
+                <Link href='p20 text-white'><a className='nb p15 text-white'>HomeChangesbackpart2</a></Link>
                 <Link href='p20 text-white'><a className='nb p15 text-white mr10'>ServiceChanges</a></Link>
                 <Link href='p20 bg-red text-white'><a className='nb p15 text-white'>About Us</a></Link>
                 <Link href='p20 text-white'><a className='nb p15 text-white'>Team</a></Link>  

@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import { useMediaQuery } from 'react-responsive';
-
+//    import useMediaQuery from '../hooks/UseMediaQuery'
+import useMediaQuery from '../hooks/UseMediaQuery'
 
 import Nav from '../components/Nav'
 import Welcome from '../components/Welcome'
@@ -14,8 +14,9 @@ import ContactForm from '../components/ContactForm'
 // "dev": "(if exist .next rd /s /q .next 2>null) && next dev",
 import {FaArrowCircleDown, FaArrowDown} from 'react-icons/fa'
 
+
 export default function Home() {
-  const onTabletOrMobile = useMediaQuery({ query: '(min-width: 1224px)' })
+  const onTabletOrMobile = useMediaQuery(1300)
   return (
     <div className='x-hidden'>
     {/* <div> */}

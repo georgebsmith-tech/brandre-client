@@ -1,11 +1,11 @@
 import Link from 'next/link'
-import { useMediaQuery } from 'react-responsive';
+   import useMediaQuery from '../hooks/UseMediaQuery'
 
 import {FaArrowCircleRight, FaArrowRight} from 'react-icons/fa'
 
 
 export default function Skillsets() {
-    const onTabletOrMobile = useMediaQuery({ query: '(min-width: 1224px)' })
+    const onTabletOrMobile = useMediaQuery(1300)
     const skills=[]
     if(onTabletOrMobile){
         skills.push('Application/ Website Development')

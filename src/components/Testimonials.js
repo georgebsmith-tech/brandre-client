@@ -1,10 +1,10 @@
 // import Link from 'next/link'
 import {FaStar} from 'react-icons/fa'
-import { useMediaQuery } from 'react-responsive';
+   import useMediaQuery from '../hooks/UseMediaQuery'
 
 
 export default function Testimonials() {
-    const onTabletOrMobile = useMediaQuery({ query: '(min-width: 1224px)' })
+    const onTabletOrMobile = useMediaQuery(1300)
     const ratingAlgo=(rating)=>{
         let presentRating=[]
         for (let index = 1; index <= 5; index++) {

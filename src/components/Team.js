@@ -1,9 +1,9 @@
 import Link from 'next/link'
 
-import { useMediaQuery } from 'react-responsive';
+   import useMediaQuery from '../hooks/UseMediaQuery'
 
 export default function Team() {
-    const onTabletOrMobile = useMediaQuery({ query: '(min-width: 1224px)' })
+    const onTabletOrMobile = useMediaQuery(1300)
     const team=[{
         imgScr:'Rectangle 7.png',
         name:'Regina Miles',

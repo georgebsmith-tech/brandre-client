@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import {FaCaretSquareDown as FaCaretDown} from 'react-icons/fa'
-import { useMediaQuery } from 'react-responsive';
+   import useMediaQuery from '../hooks/UseMediaQuery'
 export default function ContactForm() {
-    const onTabletOrMobile = useMediaQuery({ query: '(min-width: 1700px)' })
+    const onTabletOrMobile = useMediaQuery(1300)
     return (
         <form action="" className={`${onTabletOrMobile?'px5':null}`}>
             <input className={`${onTabletOrMobile?'full-width mb20':'d-none'}  f14 text-gray-500 ls2 bdr5 bdg2 p10 monte`} placeholder='Select Reason for Contacting Us.'/>

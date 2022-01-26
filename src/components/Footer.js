@@ -1,8 +1,8 @@
 import Link from 'next/link'
-import { useMediaQuery } from 'react-responsive';
+import useMediaQuery from '../hooks/UseMediaQuery'
 
 export default function Footer() {
-    const onTabletOrMobile = useMediaQuery({ query: '(min-width: 1224px)' })
+    const onTabletOrMobile = useMediaQuery(1300)
     return (
         <footer>
             <div className={`${onTabletOrMobile?'px10':'pl10per pr10per'} bg-blue-300 py50`}>
