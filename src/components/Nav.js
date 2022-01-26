@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { useMediaQuery } from 'react-responsive';
 
 export default function Nav() {
-    const onTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+    const onTabletOrMobile = useMediaQuery({ query: '(min-width: 1224px)' })
     return (
       <div className={`grid grid2 p10 ${onTabletOrMobile?null:'plr30'} bg-blue space-between z100`}> 
         <img src="./images/HomePage/Frame 1.png" alt=""/>

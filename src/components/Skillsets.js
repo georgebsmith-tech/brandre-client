@@ -5,7 +5,7 @@ import {FaArrowCircleRight, FaArrowRight} from 'react-icons/fa'
 
 
 export default function Skillsets() {
-    const onTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+    const onTabletOrMobile = useMediaQuery({ query: '(min-width: 1224px)' })
     const skills=[]
     if(onTabletOrMobile){
         skills.push('Application/ Website Development')

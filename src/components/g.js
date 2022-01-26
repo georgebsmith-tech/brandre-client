@@ -15,7 +15,7 @@ import ContactForm from '../components/ContactForm'
 import {FaArrowCircleDown} from 'react-icons/fa'
 
 export default function Home() {
-  const onTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+  const onTabletOrMobile = useMediaQuery({ query: '(min-width: 1224px)' })
   return (
     <div className='x-hidden'>
     {/* <div> */}

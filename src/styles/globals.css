@@ -71,7 +71,7 @@ ul{
   overflow-x: hidden;
 }
 .max-w-full{
-  max-width: 100%;
+  min-width: 100%;
 }
 .w-screen{
   width: 100vw;

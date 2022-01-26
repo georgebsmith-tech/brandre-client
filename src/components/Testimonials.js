@@ -4,7 +4,7 @@ import { useMediaQuery } from 'react-responsive';
 
 
 export default function Testimonials() {
-    const onTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+    const onTabletOrMobile = useMediaQuery({ query: '(min-width: 1224px)' })
     const ratingAlgo=(rating)=>{
         let presentRating=[]
         for (let index = 1; index <= 5; index++) {

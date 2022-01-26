@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { useMediaQuery } from 'react-responsive';
 
 export default function Team() {
-    const onTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+    const onTabletOrMobile = useMediaQuery({ query: '(min-width: 1224px)' })
     const team=[{
         imgScr:'Rectangle 7.png',
         name:'Regina Miles',

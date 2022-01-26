@@ -3,7 +3,7 @@ import { useMediaQuery } from 'react-responsive';
 
 
 export default function Welcome() {
-    const onTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+    const onTabletOrMobile = useMediaQuery({ query: '(min-width: 1224px)' })
     return (        
         <div className={`${onTabletOrMobile? 'bg-blue-200 h-screen60':null} x-hidden relative`}>           
             <div className={`${onTabletOrMobile? 'pr30per px5 pt30 ':'absolute ml20 x-sides-custom y-sides-0 top5 '} z-most`}>
