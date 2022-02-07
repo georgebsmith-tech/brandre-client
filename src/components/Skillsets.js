@@ -1,24 +1,24 @@
 import Link from 'next/link'
-   import useMediaQuery from '../hooks/UseMediaQuery'
+   
 
 import {FaArrowCircleRight, FaArrowRight} from 'react-icons/fa'
 
 
 export default function Skillsets() {
-    const onTabletOrMobile = useMediaQuery(1300)
+    
     const skills=[]
-    if(onTabletOrMobile){
-        skills.push('Application/ Website Development')
-    }
-    skills.push('Branding and Graphics design',
+    // if(onTabletOrMobile){
+    //     skills.push('Application/ Website Development')
+    // }
+    skills.push('Application/ Website Development','Branding and Graphics design',
     'Consultation and Business Dev',
     'Digital Marketing/ Advertising')
     return (
         <>
             {skills.map((skill, index) =>
-                <div key={index} className={`${onTabletOrMobile?'bdblue py20':'bdgray py10'} w-full bg-blue-200 flex space-between px5 `}>
-                    <p className={`${onTabletOrMobile?'f16 align-self-center':'f36'} bold400 text-white`}>{skill}</p>
-                    <button className='relative bg-blue-200 no-bd'>
+                <div key={index} className='item bg-blue-200 skillset'>
+                    <p className='text-white'>{skill}</p>
+                    <button className='bg-blue-200'>
                         {/* <span className='beforebd beforepos'>
                             &nbsp;
                         </span> */}

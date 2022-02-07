@@ -1,65 +1,73 @@
 import Link from 'next/link'
-import useMediaQuery from '../hooks/UseMediaQuery'
+
 
 export default function Footer() {
-    const onTabletOrMobile = useMediaQuery(1300)
+    
     return (
         <footer>
-            <div className={`${onTabletOrMobile?'px10':'pl10per pr10per'} bg-blue-300 py50`}>
+            <div className='mainfooter bg-blue-300'>
                 <div className='mb30'>
-                    <div className={` ${onTabletOrMobile?'flex-cols align-center gapy20 mb20':null} flex space-between`}>
-                        <h5 className={`${onTabletOrMobile?'f20':'f24'} monte bold ls1 mb10 text-white`}>Follow @Brandr.ng </h5>
-                        <div className='flex space-between flexalign-start gapx20'>
-                            <img src="images/HomePage/icons/facebook.png" alt=""/>
-                            <img src="images/HomePage/icons/twitter.png" alt=""/>
-                            <img src="images/HomePage/icons/insta.png" alt=""/>
-                            <img src="images/HomePage/icons/youtube.png" alt=""/>
-                            {/* fb,twitter, insta, youtube */}
+                    <div className='socials'>
+                        <h5 className='monte text-white'>Follow @Brandr.ng </h5>
+                        <div className='socialdiv'>
+                            <div>
+                                <img src="images/HomePage/icons/facebook.png" alt=""/>
+                            </div>
+                            <div>
+                                <img src="images/HomePage/icons/twitter.png" alt=""/>
+                            </div>
+                            <div>
+                                <img src="images/HomePage/icons/insta.png" alt=""/>
+                            </div>
+                            <div>
+                                <img src="images/HomePage/icons/youtube.png" alt=""/>
+                            </div>                           
+                             {/* fb,twitter, insta, youtube */}
                         </div>
                     </div>
-                    <hr className={`${onTabletOrMobile?'full-width':'w90'} bgblue `}/>
+                    <hr className='bgblue'/>
                 </div>
-                <ul className={`grid ${onTabletOrMobile?'grid2':'grid5'}`}>
+                <ul className='footer-list'>
                     <li>
-                        <p className='monte bold ls1 mb15 text-white f16'>Company Info</p>
+                        <p>Company Info</p>
                         <ul>
-                            <li className='mb10 text-gray-500 f14 ls2 bold600'>About Us</li>
-                            <li className='mb10 text-gray-500 f14 ls2 bold600'>Clients</li>
-                            <li className='mb10 text-gray-500 f14 ls2 bold600'>Internship</li>
-                            <li className='mb10 text-gray-500 f14 ls2 bold600'>Teams</li>
+                            <li>About Us</li>
+                            <li>Clients</li>
+                            <li>Internship</li>
+                            <li>Teams</li>
                         </ul>
                     </li>
                     <li>
-                        <p className='monte bold ls1 mb15 text-white f16'>Features</p>
+                        <p>Features</p>
                         <ul>
-                            <li className='mb10 text-gray-500 f14 ls2 bold600'>Web/ app dev</li>
-                            <li className='mb10 text-gray-500 f14 ls2 bold600'>Branding</li>
-                            <li className='mb10 text-gray-500 f14 ls2 bold600'>Printing</li>
-                            <li className='mb10 text-gray-500 f14 ls2 bold600'>Social media</li>
+                            <li>Web/ app dev</li>
+                            <li>Branding</li>
+                            <li>Printing</li>
+                            <li>Social media</li>
                         </ul>
                     </li>
                     <li>
                         <ul>
-                            <li className='mb10 text-gray-500 f14 ls2 bold600'>Web/ app dev</li>
-                            <li className='mb10 text-gray-500 f14 ls2 bold600'>Branding</li>
-                            <li className='mb10 text-gray-500 f14 ls2 bold600'>Printing</li>
-                            <li className='mb10 text-gray-500 f14 ls2 bold600'>Social media</li>
+                            <li>Web/ app dev</li>
+                            <li>Branding</li>
+                            <li>Printing</li>
+                            <li>Social media</li>
                         </ul>
                     </li>
                     <li>
-                        <p className='monte bold ls1 mb15 text-white f16'>Resources</p>
+                        <p>Resources</p>
                         <ul>
-                        <li className='mb10 text-gray-500 f14 ls2 bold600'>Download Profile</li>
-                            <li className='mb10 text-gray-500 f14 ls2 bold600'>YouTube Lessons</li>
-                            <li className='mb10 text-gray-500 f14 ls2 bold600'>FAQ</li>
+                            <li>Download Profile</li>
+                            <li>YouTube Lessons</li>
+                            <li>FAQ</li>
                         </ul>
                     </li>
-                    <div>
-                        <p className='monte bold ls1 mb15 text-white f16'>Get In Touch</p>
-                        <div className='relative mb5'>
-                            <input type="text" placeholder='Your Email' className='full-width f14 text-gray-500 ls2 bdr5 bdg2 p10 monte'/>
+                    <div className='newsletter'>
+                        <p>Get In Touch</p>
+                        <div className='letterdiv'>
+                            <input type="text" placeholder='Your Email'/>
                             <Link href='/'>
-                                <button className='f14 ls2 monte text-white ct p10 absbox absolute position-full left75'>Subscribe</button>
+                                <button>Subscribe</button>
                             </Link>
                             
                         </div>
@@ -68,9 +76,8 @@ export default function Footer() {
                 </ul>    
             </div>
             
-            
-            <div className='bg-red pl10per py25'>
-                <p className={`bold600 ls2 monte ${onTabletOrMobile?'f11':'f14'} text-white`}>Made With Love By BrandR All Right Reserved 2022</p>
+            <div className='rightdiv bg-red'>
+                <p className='text-white'>Made With Love By BrandR All Right Reserved 2022</p>
             </div>
         </footer>
         

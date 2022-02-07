@@ -1,9 +1,9 @@
 import Link from 'next/link'
 
-   import useMediaQuery from '../hooks/UseMediaQuery'
+   
 
 export default function Team() {
-    const onTabletOrMobile = useMediaQuery(1300)
+    
     const team=[{
         imgScr:'Rectangle 7.png',
         name:'Regina Miles',

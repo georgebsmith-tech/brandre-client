@@ -1,6 +1,6 @@
 import Link from 'next/link'
-//    import useMediaQuery from '../hooks/UseMediaQuery'
-import useMediaQuery from '../hooks/UseMediaQuery'
+//    
+
 
 import Nav from '../components/Nav'
 import Welcome from '../components/Welcome'
@@ -8,126 +8,143 @@ import Whatwedo from '../components/Whatwedo'
 import Projects from '../components/Projects'
 import Skillsets from '../components/Skillsets'
 import Testimonials from '../components/Testimonials'
-import Team from '../components/Team'
+// import Team from '../components/Team'
 import Footer from '../components/Footer'
 import ContactForm from '../components/ContactForm'
 // "dev": "(if exist .next rd /s /q .next 2>null) && next dev",
-import {FaArrowCircleDown, FaArrowDown} from 'react-icons/fa'
+import {FaArrowCircleDown, FaArrowDown, FaArrowLeft} from 'react-icons/fa'
 
 
 export default function Home() {
-  const onTabletOrMobile = useMediaQuery(1300)
+  
   return (
     <div className='x-hidden'>
     {/* <div> */}
       <Nav/>
       <Welcome/>
-      <h4 className={`${onTabletOrMobile?'f21 px5':'f36'} ct lh48 bold500 mt50 mb50 text-blue`}>You need everything to stand out right!</h4>
-      <div className={`grid ${onTabletOrMobile?'mb30 gapy55':'grid3 gap20'} mx20p`}>
+      <h4>You need everything to stand out right!</h4>
+      <div className='whatwedo'>
         <Whatwedo/>
       </div>
-      <div className='mt50'>
-        <h2 className={`ct ${onTabletOrMobile?'f34':'f54'} ptserif bold lh80 mb30 text-red`}>Our Services</h2>
-        <div className={`${onTabletOrMobile?'d-none':'relative'}`}>
-          <div className='flex space-between absolute left0 right0 mt10 mx10'>
-            <h5 className='text-white f36'>Application and Website Development</h5>
+      <div className='mt100'>
+        <h2 className='serviceh2 ptserif'>Our Services</h2>
+        <div className='appservice'>
+          <div className='appdiv'>
+            <h5>Application and Website Development</h5>
             {/* icons */}
             <a href="/" className='bd-w p5 round'>
-              <FaArrowDown size='30' fill='#FFFFFF'/>
+              <FaArrowLeft size='30' fill='#FFFFFF'/>
             </a>
-            
           </div>
-          <div>
-            <img src="images/HomePage/Brandr hero 03 1.png" alt="ss" className='w-screen max-w-full'/>  
+          <div className='relative'>  
+            <img src="images/HomePage/icons/playvid.png" alt="" className='playbutton'/>
+            <img src="images/HomePage/Brandr hero 03 1 (1).png" alt="ss" className='w-screen max-w-full'/>  
           </div>
         </div>
-        <div className={`${onTabletOrMobile?'d-none':'mt100 px5'}`}>
-          <h5 className='bold500 f36 mb10 text-blue'>Light, Fast &amp; Powerful Websites</h5>
-          <div className='grid grid2'>
-            <p  className='f16 text-blue-500 lh26'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+        <div className='websitediv'>
+          <h5 className='text-blue'>Light, Fast &amp; Powerful Websites</h5>
+          <div>
+            <p  className='text-blue-500 webdesc'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
             {/* <Link href={'/'}> <a className='mt10 bold f18 ct py20 px24 bg-blue-200'>Get in touch</a></Link> */}
-            <div className='self-end'>
+            <div className='webdesclink'>
             <Link href="/account-manager">
-                <a className='bdr8 text-white mt10 bold f18 ct py20 px24 bg-blue-200'>
-                  Get in touch
+                <a className='text-white bg-blue-200'>
+                  See Projects
                 </a>
             </Link>
             </div>
             
           </div>
         </div>
-        <div className={`${onTabletOrMobile?'d-none':'px5 pr10 mt30'}`}>
-          <h3 className='bold500 f36 mb10 text-gray-200'>See featured Case Studies</h3>
-          <div className='grid gapx20 grid4 '>
+        {/* <div className='projectdiv'>
+          <h3 className='text-gray-200'>See featured Case Studies</h3>
+          <div className='projectgrid'>
             <Projects/>
           </div>
-        </div>
-        <div className={`${onTabletOrMobile?'mt30':'mt50'}`}>
+        </div> */}
+        <div className='skillsetdiv'>
           <Skillsets/>
         </div>
       </div>
-      <div className='px5 mt50'>
-        <h4 className={`${onTabletOrMobile?'f22':'f36'} bold500 text-blue mb30 afterdiv`}>ABOUT US</h4>
-        <div className={`grid space-between ${onTabletOrMobile?null:'grid2-60-40'}`}>
-          <div className={`${onTabletOrMobile?'px5 pr15per':null}`}>
-            <h2 className={`${onTabletOrMobile?'f33 lh37':'f84 lh80'} serif bold text-red mb20`}>We are founded
+      <div className='aboutus'>
+        <h4 className='text-blue afterdiv'>ABOUT US</h4>
+        <div className='headline'>
+          <div>
+              <img src="./images/HomePage/programmer.png" alt="" />
+              <p>App/Website Development</p>
+          </div>
+          <div>
+              <img src="./images/HomePage/packaging.png" alt="" />
+              <p>Branding/Graphics</p>
+          </div>
+          <div>
+
+              <img src="./images/HomePage/doctor 1.png" alt="" />
+              <p>Business Consultation</p>
+          </div>
+          <div>
+              <img src="./images/HomePage/social-media.png" alt="" />
+              <p>Digital Marketing/ Advertising</p>
+          </div>
+          {/* <div className='headlinedesc'>
+            <h2 className='serif text-red'>We are founded
                 on the principle
                 of creativity and excellence
             </h2>
-            <p className={`${onTabletOrMobile?'f19':'f24'} lh32 inter bold500 text-blue-200 -ls2em`}>With our expertise, we fuel your social media and create apps that promote engaging experience for your business.</p>
+            <p className='inter text-blue-200'>With our expertise, we fuel your social media and create apps that promote engaging experience for your business.</p>
           </div>
-          <div className={`${onTabletOrMobile?'mt20 self-center':'self-end'}`}>
-            <img src="./images/HomePage/Group.png" alt="" className={`${onTabletOrMobile?'w-200':null}`}/>
-          </div>
+          <div className='aboutimg'>
+            <img src="./images/HomePage/Group.png" alt=""/>
+          </div> */}
         </div>
-        <div className={`mt70 grid ${onTabletOrMobile?'px5 gapy40':'grid2'}`}>
-          <div className=''>
-            <h5 className={`bold500 ${onTabletOrMobile?'f29':'f36'} text-blue mb15`}>Mission Statement</h5>
-            <div className={`${onTabletOrMobile?null:'pr30per'}`}>
-              <p className={`${onTabletOrMobile?'jt':null} f16 lh26 text-blue-400`}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
+        <p className='inter expertise'>With our expertise, we fuel your social media and create apps that promote engaging experience for your business.</p>
+        <div className='misval'>
+          <div className='mission'>
+            <h5 className='text-blue'>Mission Statement</h5>
+            <div className='content'>
+              <p className='text-blue-400'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
                   mus.</p>
-              <p className={`${onTabletOrMobile?'jt':null} f16 lh26 text-blue-400`}>
+              <p className='text-blue-400'>
                 Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
               </p>
             </div>
           </div> 
           <div className=''>
-            <h5 className={`bold500 ${onTabletOrMobile?'f29':'f36'} text-blue mb15`}>Vision and VALUEs</h5>
-            <div className={`${onTabletOrMobile?null:'pr30per'}`}>
-              <p className={`${onTabletOrMobile?'jt':null} f16 lh26 text-blue-400`}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
+            <h5 className='text-blue'>Vision and VALUEs</h5>
+            <div className='content'>
+              <p className='text-blue-400'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
                   mus.</p>
-              <p className={`${onTabletOrMobile?'jt':null} f16 lh26 text-blue-400`}>
+              <p className='text-blue-400'>
                 Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
               </p>
             </div>
-
           </div>                   
         </div>
       </div>
-      <div className={`${onTabletOrMobile?null:null} mt100 p10 py30 bg-light-green`}>
-        <div className='ct'>
-          <h4 className={`${onTabletOrMobile?'f29':'f36'} bold500 text-blue mb10`}>What our Clients say</h4>
-          <p className={`f16 lh26 text-blue-500 ${onTabletOrMobile?'px15':'px25per'}`}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus </p>    
+      <div className='testiparent bg-light-green'>
+        <div className='headline ct'>
+          <h4 className='text-blue'>What our Clients say</h4>
+          <p className='text-blue-500'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus </p>    
         </div>
-        <div className={`${onTabletOrMobile?' ov-auto grid-auto-flow pl10px gapx15':'grid3 gapx20 px10'} grid gapy40 mt50`}>
+        <div className='testi'>
           <Testimonials/>
         </div>
-        <p className='bold400 f16 ct text-blue-500 mt50 '>Connect with us on socials to read more Awards and Accolades we have baged!</p>            
+        <p className='text-blue-500 connect'>Connect with us on socials to read more Awards and Accolades we have baged!</p>            
       </div>
-      <div className={`${onTabletOrMobile?'py20 ':' py50'} bg-yellow-200`}>
-          <h4 className={`text-blue ct ${onTabletOrMobile?'f18':'f47'} bold500`}>Clients we have worked with</h4>
-          <div className={`${onTabletOrMobile?'px5 space-around':'px10 space-between'} py25 mt20 flex flexalign-start`}>
-            <img src="images/HomePage/icons/hooli.png" alt="" className={`${onTabletOrMobile?'w-50':null} `}/>
-            <img src="images/HomePage/icons/lyft.png" alt="" className={`${onTabletOrMobile?'w-50':null} `}/>
-            <img src="images/HomePage/icons/leaf.png" alt="" className={`${onTabletOrMobile?'w-50':null} `}/>
-            <img src="images/HomePage/icons/stripe.png" alt="" className={`${onTabletOrMobile?'w-50':null} `}/>
-            <img src="images/HomePage/icons/aws.png" alt="" className={`${onTabletOrMobile?'w-50 d-none':null} `}/>
-            <img src="images/HomePage/icons/teddybear.png" alt="" className={`${onTabletOrMobile?'w-50 d-none':null} `}/>
+      <div className='clientsdiv'>
+          <h4 className='text-blue'>Clients we have worked with</h4>
+          <div>
+            <img src="images/HomePage/icons/hooli.png" alt="" />
+            <img src="images/HomePage/icons/lyft.png" alt="" />
+            <img src="images/HomePage/icons/leaf.png" alt="" />
+            <img src="images/HomePage/icons/stripe.png" alt="" />
+            <img src="images/HomePage/icons/aws.png" alt=""/>
+            <img src="images/HomePage/icons/teddybear.png" alt=""/>
             {/* icons full here */}
           </div>
 
       </div>
-      <div className={`${onTabletOrMobile?'gradient-2':'bg-blue-200'} text-white py50`}>
+      {/* <div className={`${onTabletOrMobile?'gradient-2':'bg-blue-200'} text-white py50`}>
         <div className={`${onTabletOrMobile?null:null} mb30`}>
           <h3 className={`${onTabletOrMobile?'f33':'f66'} poppins ct bold mb10 text-white`}>Meet Our Team</h3>
           <p className={`${onTabletOrMobile?'f18 lh26 px3':'f22 lh36 px10'} opensans ct text-white`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -135,14 +152,14 @@ export default function Home() {
         <div className={` ${onTabletOrMobile?'grid2 px5 gapx20':'grid4 px5'} grid gapy20`}>
           <Team/>
         </div>
-      </div>
-      <div className={`${onTabletOrMobile?'pb50 pt10 gradient-1':'bg-gray grid2 px3 py50'} grid`}>
-        <div className={`${onTabletOrMobile?null: 'pr15per'}`}>
-          <h4 className={`${onTabletOrMobile?'f25 lh32 ct':'f40 lh57'} bold monte text-white ls2 mb15`}>Got a project? Get in touch with us now! </h4>
+      </div> */}
+      <div className='contactgrid'>
+        <div className='contactdiv'>
+          <h4 className='monte text-white'>Got a project? Get in touch with us now! </h4>
           <ContactForm/>
-          <p className={`${onTabletOrMobile?'f12 ct px15 mt30':'f16 mt20'} text-white bold monte ls1`}>Looking for an internship opportunity? <Link href={'/'}><a className='text-blue-200 underline'>Click Here</a></Link> to register</p>
+          <p className='text-white monte'>Looking for an internship opportunity? <Link href={'/'}><a className='text-blue-200 underline'>Click Here</a></Link> to register</p>
         </div>
-        <img src='images/HomePage/Group (1).png' alt="ddd" className={`${onTabletOrMobile?'w-300 justify-self-ct':null} mt50`}/>
+        <img src='images/HomePage/Group (1).png' alt="ddd" />
       </div>
     
       <Footer/>
