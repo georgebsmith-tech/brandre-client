@@ -8,7 +8,7 @@ export default function Footer() {
             <div className='mainfooter bg-blue-300'>
                 <div className='mb30'>
                     <div className='socials'>
-                        <h5 className='monte text-white'>Follow @Brandr.ng </h5>
+                        <h5 className='monte text-white'>Follow @ Fleckr.ng </h5>
                         <div className='socialdiv'>
                             <div>
                                 <img src="images/HomePage/icons/facebook.png" alt=""/>
@@ -63,7 +63,7 @@ export default function Footer() {
                         </ul>
                     </li>
                     <div className='newsletter'>
-                        <p>Get In Touch</p>
+                        <p className='txt-first'>Get In Touch</p>
                         <div className='letterdiv'>
                             <input type="text" placeholder='Your Email'/>
                             <Link href='/'>
@@ -71,13 +71,13 @@ export default function Footer() {
                             </Link>
                             
                         </div>
-                        <p className='f12 monte text-gray-500'>Lorem impsum dolor amit</p>
+                        <p className='txt-last'>Lets you get access to our premium offers!</p>
                     </div>
                 </ul>    
             </div>
             
-            <div className='rightdiv bg-red'>
-                <p className='text-white'>Made With Love By BrandR All Right Reserved 2022</p>
+            <div className='copydiv'>
+                <p className='text-white'>Made With Love By Fleckr All Right Reserved 2022</p>
             </div>
         </footer>
         

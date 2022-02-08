@@ -10,9 +10,8 @@ export default function Skillsets() {
     // if(onTabletOrMobile){
     //     skills.push('Application/ Website Development')
     // }
-    skills.push('Application/ Website Development','Branding and Graphics design',
-    'Consultation and Business Dev',
-    'Digital Marketing/ Advertising')
+    skills.push('Application/ Website Development','Branding and Graphics design','Consultation and Business Dev'
+  ,'Digital Marketing/ Advertising')
     return (
         <>
             {skills.map((skill, index) =>
@@ -24,9 +23,9 @@ export default function Skillsets() {
                         </span> */}
                         
                         <Link href={'/'}>
-                            <a className='z-most'><FaArrowRight size='30' fill='#FFFFFF'/></a>
+                            <a className='z-most'><FaArrowRight fill='#FFFFFF' className='arrow'/></a>
                         </Link>
-                        <img src="images/HomePage/icons/semicircle.png" alt="ss" className='absolute beforepos'/>
+                        <img src="images/HomePage/icons/semicircle.png" alt="ss" className='absolute circlepos'/>
                     </button>
                     
                 </div>

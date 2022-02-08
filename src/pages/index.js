@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Nav from '../components/Nav'
 import Welcome from '../components/Welcome'
 import Whatwedo from '../components/Whatwedo'
-import Projects from '../components/Projects'
+// import Projects from '../components/Projects'
 import Skillsets from '../components/Skillsets'
 import Testimonials from '../components/Testimonials'
 // import Team from '../components/Team'
@@ -26,14 +26,14 @@ export default function Home() {
       <div className='whatwedo'>
         <Whatwedo/>
       </div>
-      <div className='mt100'>
+      <div className='mt100 service'>
         <h2 className='serviceh2 ptserif'>Our Services</h2>
         <div className='appservice'>
           <div className='appdiv'>
             <h5>Application and Website Development</h5>
             {/* icons */}
-            <a href="/" className='bd-w p5 round'>
-              <FaArrowLeft size='30' fill='#FFFFFF'/>
+            <a href="/">
+              <FaArrowLeft size='30' fill='#0E0A5C'/>
             </a>
           </div>
           <div className='relative'>  
@@ -84,7 +84,7 @@ export default function Home() {
           </div>
           <div>
               <img src="./images/HomePage/social-media.png" alt="" />
-              <p>Digital Marketing/ Advertising</p>
+              <p>Social wedia/ Advertising</p>
           </div>
           {/* <div className='headlinedesc'>
             <h2 className='serif text-red'>We are founded
@@ -121,7 +121,25 @@ export default function Home() {
           </div>                   
         </div>
       </div>
-      <div className='testiparent bg-light-green'>
+      <div className='bg-gray'>
+        <div className='teamdiv'>
+          <h4 className='text-white'>Our Team</h4>
+          <p className='text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div className='contactdiv'>
+          <h4 >Contact Us</h4>
+          <div className='contactgrid'>
+            <div>
+              <h4 className='monte text-white'>Got a project? Get in touch with us now! </h4>
+              <ContactForm/>
+              <p className='internship'>Looking for an internship opportunity? <Link href={'/'}><a className='text-blue-200 underline'>Click Here</a></Link> to register</p>
+            </div>
+            <img src='images/HomePage/Group (1).png' alt="ddd" />
+          </div>
+        </div>  
+      </div>
+
+      {/* <div className='testiparent bg-light-green'>
         <div className='headline ct'>
           <h4 className='text-blue'>What our Clients say</h4>
           <p className='text-blue-500'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus </p>    
@@ -140,10 +158,9 @@ export default function Home() {
             <img src="images/HomePage/icons/stripe.png" alt="" />
             <img src="images/HomePage/icons/aws.png" alt=""/>
             <img src="images/HomePage/icons/teddybear.png" alt=""/>
-            {/* icons full here */}
           </div>
 
-      </div>
+      </div> */}
       {/* <div className={`${onTabletOrMobile?'gradient-2':'bg-blue-200'} text-white py50`}>
         <div className={`${onTabletOrMobile?null:null} mb30`}>
           <h3 className={`${onTabletOrMobile?'f33':'f66'} poppins ct bold mb10 text-white`}>Meet Our Team</h3>
@@ -152,16 +169,7 @@ export default function Home() {
         <div className={` ${onTabletOrMobile?'grid2 px5 gapx20':'grid4 px5'} grid gapy20`}>
           <Team/>
         </div>
-      </div> */}
-      <div className='contactgrid'>
-        <div className='contactdiv'>
-          <h4 className='monte text-white'>Got a project? Get in touch with us now! </h4>
-          <ContactForm/>
-          <p className='text-white monte'>Looking for an internship opportunity? <Link href={'/'}><a className='text-blue-200 underline'>Click Here</a></Link> to register</p>
-        </div>
-        <img src='images/HomePage/Group (1).png' alt="ddd" />
-      </div>
-    
+      </div> */}    
       <Footer/>
     </div>
   )
