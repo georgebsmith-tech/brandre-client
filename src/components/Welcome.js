@@ -7,7 +7,7 @@ export default function Welcome() {
                 <h2>Its simple!</h2>
                 <p className='inter bold500 text-white'>With our expertise, we fuel your social media and create apps that promote engaging experience for your business.</p>
             </div>
-            <div className='welcomimg'>
+            <div className='welcomimg '>
                 <img src="images/HomePage/Brandr hero 01 1 (1).png" alt=""/>
             </div>
         </div>

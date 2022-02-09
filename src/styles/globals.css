@@ -119,7 +119,7 @@ html{
 }
 
 
-.x-hidden> h4{
+.word{
   text-align: center;
   line-height: 48px;
   font-weight: 500;
@@ -144,12 +144,14 @@ html{
   box-shadow: -3px 2px 4px 6px rgba(255, 255, 255, 0.85);
   border-radius: 9px;
 }
-.whatwedo title{
+.whatwedo .title{
   font-size: 1.6rem;
+  /* display: none; */
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
-.whatwedo desc{
+.whatwedo .desc{
+  /* display: none; */
   font-size: 1.2rem;
   line-height: 18px;
 }
@@ -293,24 +295,29 @@ html{
   font-size: 30px;
 }
 .aboutus{
-  padding: 5%;
-  margin-top: 50px;
+  /* padding: 5%; */
+  padding-top: 80px;
   background: #F5F5F5;
-  padding-bottom: 80px;
+  /* background: #000; */
+  margin-bottom: 80px;
 }
 .aboutus >h4{
   font-size: 3.6rem;
   font-weight: 500;
-  margin-bottom: 30px;
+  margin-left: 109px;
+  margin-bottom: 120px;
 }
 .aboutus .headline{
   display: grid;
-  justify-content: space-between;
-  padding: 50px 100px;
+  justify-content: space-around;
+  /* background: red; */
+  /* padding: 0 100px; */
+  margin-left: 200px ;
   grid-template-columns:repeat(4,1fr);
 }
 .headline> div{
   display: flex;
+  /* background: orange; */
   flex-direction: column;
   /* align-content: center; */
   align-items: flex-start;
@@ -333,12 +340,18 @@ html{
   font-weight: 500;
   font-size: 2.4rem;
   line-height: 32px;
+
   /* or 133% */
 
   text-align: center;
   letter-spacing: -0.02em;
-  padding: 0 250px;
+  /* padding: 0 250px; */
+  margin-left: 250px;
+  margin-top: 115px;
+  margin-right: 300px;
+  padding-bottom: 150px;
   color: #0E0A5C;
+/* background: red; */
 }
 /* .headlinedesc>h2{
   font-weight: bold;
@@ -357,7 +370,9 @@ html{
 }
 .misval{
   background: #FFFFFF;
+  background: #000;
   padding-top: 70px;
+  padding-left: 115px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -374,7 +389,7 @@ html{
   line-height: 26px;
 }
 .teamdiv{
-  padding: 0 150px;
+  /* padding: 0 150px; */
   padding-bottom: 150px;
   padding-top: 50px;
   
@@ -382,6 +397,9 @@ html{
   background: #0e0a5c;
   border-radius: 0 0 30% 30%;
   /* background: radial-gradient(circle at top,#0e0a5c 90%,#a2a3e2 95.1%); */
+}
+.hideOnLg{
+  display: none;
 }
 /* .afterteam::after{
   display: block;
@@ -394,12 +412,14 @@ html{
   font-size: 6.6rem;
   text-align: center;
   font-weight: bold;
+  /* margin: 0 150px; */
   margin-bottom: 20px;
 }
 .teamdiv>p{
   font-size: 2.2rem;
   text-align: center;
-  padding: 0 250px;
+  margin: 0 400px;
+  /* padding: 0 250px; */
   line-height: 36px;
 }
 /* .testiparent{
@@ -478,7 +498,7 @@ html{
 } */
 .contactdiv{
   background:#A2A3E2;
-  padding-top: 80px;
+  padding-top: 170px;
 }
 .contactdiv>h4{
   font-size: 6.6rem;
@@ -497,11 +517,6 @@ html{
 }
 .contactgrid>div{
   /* padding-right: 15%; */
-  font-size: 4rem;
-  line-height: 57px;
-  font-weight: bold;
-  letter-spacing: 0.2px;
-  margin-bottom: 15px;
   /* background-color:red; */
 }
 .contactgrid> div>h4{
@@ -744,7 +759,8 @@ ul{
   background:#E7ECFF
 }
 .bg-gray{
-  background:#A2A3E2
+  background:#A2A3E2;
+  
 }
 
 .tw{
@@ -1078,7 +1094,7 @@ cursor:pointer;
   background: linear-gradient(to bottom, #A2A3E2 82%, #FFFFFF 30%);
 }
 .gradient-2{
-  background: radial-gradient(circle at top, #0E0A5C 95%, #A2A3E2 95.1%);
+  background: radial-gradient(circle at top, #0E0A5C 93%, #A2A3E2 93.1%);
 }
 
 .bg-orange{
@@ -1861,24 +1877,27 @@ grid-template-columns: repeat(7,1fr);
   }
   .welcomimg img{
     height: 262px;
+    /* width: 380px; */
+    margin-left: -20%;
   }
 
-  .x-hidden>h4{
+  .word{
     font-size: 2.1rem;
-    padding-left: 5%;
-    padding-right: 5%;
+    margin: 40px 70px;
   }
 
   .whatwedo{
+    margin: 0 90px;
     margin-bottom: 30px;
     row-gap: 55px;
     grid-template-columns: none;
   }
   /* start from here */
   .whatwedo >div{
-    padding: 0 35px;
+    padding: 0 26px;
+    /* padding-right: 45px; */
     padding-top: 35px;
-    padding-bottom: 0;
+    padding-bottom: 70px;
   }
   .service{
     margin-top: 75px;
@@ -1903,8 +1922,9 @@ grid-template-columns: repeat(7,1fr);
   }
   .skillsetdiv .item{
     border: 1px solid #707070;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding: 25px;
+    padding-left: 30px;
+    padding-right: 20px;
   }
   .skillsetdiv .item >p{
     align-self: center;
@@ -1918,41 +1938,44 @@ grid-template-columns: repeat(7,1fr);
   }
   .aboutus{
     padding: 0;
-    margin-top: 50px;
+    padding-top: 50px;
+    margin-top: 0;
     /* padding-left: 90px; */
     /* padding-bottom: 100px; */
   }
   .aboutus>h4{
-    padding: 0 10%;
+    /* padding: 0 10%; */
+    margin-left: 100px;
     font-size: 2.7rem;
-    margin-bottom: 90px;
+    margin-bottom: 80px;
   }
   .aboutus .headline{
     row-gap: 30px;
-    padding:0 110px;
+    margin-left: 100px;
+    /* margin-left: 100px; */
+    /* padding:0 110px; */
     grid-template-columns: none;
   }
 
   .headline>div{
     row-gap: 25px;
+    /* margin-left: 105px; */
     /* align-items: center; */
   }
   .headline>div >p{
     /* padding: 0 200px; */
     padding: 0 5px;
     background: #040055;
-    margin-right: 550px;
+    margin-right: 160px;
   }
   .expertise{
     /* background: #000; */
+    margin: 0 70px;
     margin-top: 50px;
-    margin-left: 0;
-    padding-left: 100px;
-    /* padding: 0 100px; */
-    margin-right: 150px;
-    /* padding-right: 150px; */
+
+    /* margin-left: 50px; */
   }
-  .headlinedesc{
+  /* .headlinedesc{
     padding: 5%;
     padding-right: 15%;
   }
@@ -1962,7 +1985,7 @@ grid-template-columns: repeat(7,1fr);
   }
   .headlinedesc>p{
     font-size: 1.9rem;
-  }
+  } */
   .aboutimg{
     justify-self: center;
     margin-top: 20px;
@@ -1979,6 +2002,10 @@ grid-template-columns: repeat(7,1fr);
     padding-top: 60px;
     row-gap: 40px;
   }
+  .misval .content{
+    padding-right: 0;
+    /* margin-right: 63px; */
+  }
   .misval> div>h5{
     font-size: 2.9rem;
   }
@@ -1986,19 +2013,35 @@ grid-template-columns: repeat(7,1fr);
     text-align: justify;
   }
   .teamdiv{
-    /* background: radial-gradient(ellipse to bottom, #0E0A5C 5%, #A2A3E2 95.1%); */
+    padding: 0;
+    padding-top: 32px;
+    padding-bottom: 75px;
+    border-radius:unset;
+    /* display: none; */
+    background: radial-gradient(circle at top, #0E0A5C 90%, #A2A3E2 90.1%);
+    /* background: radial-gradient(circle to top, #0E0A5C 96%, #A2A3E2 95.1%); */
+  }
+  .hideOnSm{
+    display: none;
+  }
+  .hideOnLg{
+    display: block;
   }
   .teamdiv>h4{
-    font-size: 6.6rem;
-    text-align: center;
-    font-weight: bold;
+    /* padding: 0; */
+    background: red;
+    font-size: 3.3rem;
+    margin: 0 100px;
     margin-bottom: 20px;
   }
   .teamdiv>p{
     font-size: 2.2rem;
     text-align: center;
-    padding: 0 250px;
+    margin: 0 40px;
+    /* padding: 0; */
+    /* padding: 0 250px; */
     line-height: 36px;
+    
   }
   /* .testiparent .headline>h4{
     font-size: 2.9rem;
@@ -2039,15 +2082,29 @@ grid-template-columns: repeat(7,1fr);
 
   }
   .contactdiv{
-    display: none;
-    padding-right: 0;
-    background:#A2A3E2;
-    /* background: linear-gradient(to bottom, #A2A3E2 82%, #FFFFFF 30%); */
+    padding-top: 2px;
+    background: linear-gradient(to bottom, #A2A3E2 82%, #FFFFFF 30%);
   }
   .contactdiv>h4{
+    display: none;
+    
+  }
+  .contactgrid{
+    background-color: green;
+    grid-template-columns: unset;
+    padding: 0;
+    column-gap: 0;
+  }
+  .contactgrid>div{
+    background-color: #040320;
+  }
+  .contactgrid>div>h4{
     font-size: 2.5rem;
     line-height: 32px;
+    /* or 128% */
+
     text-align: center;
+    letter-spacing: 0.2px;
   }
   .contactdiv>p{
     font-size: 1.2rem;
@@ -2060,7 +2117,10 @@ grid-template-columns: repeat(7,1fr);
     width: 300px;
     justify-self: center;
   }
-  .contactform{
+  .job-caret>img, .reason-caret>img{
+    display: none;
+  }
+  /* .contactform{
     padding-left: 5%;
     padding-right: 5%;
   }
@@ -2096,10 +2156,9 @@ grid-template-columns: repeat(7,1fr);
     grid-template-columns: repeat(2, 1fr);
   }
   .newsletter{
-    /* grid-column: 1 / 3; */
-  }
-  .rightdiv>p{
+    /* grid-column: 1 / 3; }*/
+  .copydiv>p{
     font-size: 1.1rem;
-  }
+  } 
 }
 

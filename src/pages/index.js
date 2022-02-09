@@ -1,7 +1,5 @@
 import Link from 'next/link'
 //    
-
-
 import Nav from '../components/Nav'
 import Welcome from '../components/Welcome'
 import Whatwedo from '../components/Whatwedo'
@@ -22,11 +20,11 @@ export default function Home() {
     {/* <div> */}
       <Nav/>
       <Welcome/>
-      <h4>You need everything to stand out right!</h4>
+      <h4 className='word'>You need everything to stand out right!</h4>
       <div className='whatwedo'>
         <Whatwedo/>
       </div>
-      <div className='mt100 service'>
+      <div className='service'>
         <h2 className='serviceh2 ptserif'>Our Services</h2>
         <div className='appservice'>
           <div className='appdiv'>
@@ -84,7 +82,7 @@ export default function Home() {
           </div>
           <div>
               <img src="./images/HomePage/social-media.png" alt="" />
-              <p>Social wedia/ Advertising</p>
+              <p>Social Media Marketing</p>
           </div>
           {/* <div className='headlinedesc'>
             <h2 className='serif text-red'>We are founded
@@ -123,8 +121,9 @@ export default function Home() {
       </div>
       <div className='bg-gray'>
         <div className='teamdiv'>
-          <h4 className='text-white'>Our Team</h4>
-          <p className='text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h4 className='text-white hideOnSm poppins'>Our Team</h4>
+          <h4 className='text-white hideOnLg poppins'>Meet Our Team</h4>
+          <p className='text-white opensans'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
         <div className='contactdiv'>
           <h4 >Contact Us</h4>

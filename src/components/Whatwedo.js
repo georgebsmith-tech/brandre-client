@@ -18,17 +18,17 @@ export default function Whatwedo() {
     return (
         <>
             {tasks.map(({imgScr, title, description}, index)=>(
-                <div key={index}>
+                <div key={index} className='whatweitem'>
                     <img src={`images/HomePage/${imgScr}`} alt="task" className='mx-auto'/>
                     <div className='ct'>
-                        <p className='f16 mt10 mb10 text-blue bold500'>{title}</p>
-                        <p className='f12 lh18 text-gray'>{description}</p>
+                        <p className='text-blue bold500 title'>{title}</p>
+                        <p className='text-gray desc'>{description}</p>
                     </div>
                 </div>
                 // <Task task={task} onDelete={onDelete} onToggle={onToggle}/>
             ))}
         </>               
-        
+    
     )
 }
 // flex f14 space-between
