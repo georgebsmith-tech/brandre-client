@@ -370,7 +370,6 @@ html{
 }
 .misval{
   background: #FFFFFF;
-  background: #000;
   padding-top: 70px;
   padding-left: 115px;
   display: grid;
@@ -515,10 +514,7 @@ html{
   /* display: none; */
   padding: 40px 3%;
 }
-.contactgrid>div{
-  /* padding-right: 15%; */
-  /* background-color:red; */
-}
+
 .contactgrid> div>h4{
   font-size: 4rem;
   line-height: 57px;
@@ -573,13 +569,13 @@ html{
 .reasondiv, .phonejob>div{
   align-items: flex-start;
 }
-.contactform .selectgrid{
+/* .contactform .selectgrid{
   column-gap: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 20px;
-}
-.selectgrid> div{
+} */
+/* .selectgrid> div{
   position: relative;
 }
 .selectgrid>div>button{
@@ -601,7 +597,7 @@ html{
 .ctrycode{
   width: 23.5vw;
   text-align: center;
-}
+} */
 .phone{
   width: 62.5vw;
 }
@@ -1862,7 +1858,7 @@ grid-template-columns: repeat(7,1fr);
     font-size: 4.6rem;
     line-height: 46px;
     padding-right: 200px;
-    background: red;
+    /* background: red; */
   }
   .welcome p{
     font-size: 1.3rem;
@@ -1965,7 +1961,7 @@ grid-template-columns: repeat(7,1fr);
   .headline>div >p{
     /* padding: 0 200px; */
     padding: 0 5px;
-    background: #040055;
+    /* background: #040055; */
     margin-right: 160px;
   }
   .expertise{
@@ -2029,7 +2025,6 @@ grid-template-columns: repeat(7,1fr);
   }
   .teamdiv>h4{
     /* padding: 0; */
-    background: red;
     font-size: 3.3rem;
     margin: 0 100px;
     margin-bottom: 20px;
@@ -2074,15 +2069,11 @@ grid-template-columns: repeat(7,1fr);
   .clientsdiv>img{
     width: 50px;
   } */
-  .contactgrid{
-    /* background:#A2A3E2; */
-    padding-bottom: 50px;
-    padding-top: 10px;
-    grid-template-columns: none;
 
-  }
   .contactdiv{
+    padding: 0;
     padding-top: 2px;
+    grid-template-columns: none;
     background: linear-gradient(to bottom, #A2A3E2 82%, #FFFFFF 30%);
   }
   .contactdiv>h4{
@@ -2090,36 +2081,62 @@ grid-template-columns: repeat(7,1fr);
     
   }
   .contactgrid{
-    background-color: green;
-    grid-template-columns: unset;
+    /* margin: 0 40px; */
     padding: 0;
+    padding-bottom: 35px;
+    grid-template-columns: unset;
+    
     column-gap: 0;
+
   }
-  .contactgrid>div{
-    background-color: #040320;
-  }
+  
   .contactgrid>div>h4{
     font-size: 2.5rem;
     line-height: 32px;
-    /* or 128% */
-
+    padding: 0 50px;
     text-align: center;
     letter-spacing: 0.2px;
   }
-  .contactdiv>p{
-    font-size: 1.2rem;
-    text-align: center;
-    padding-left: 15%;
-    padding-right: 15%;
-    margin-top: 30px;
-  }
+
   .contactgrid img{
     width: 300px;
     justify-self: center;
   }
   .job-caret>img, .reason-caret>img{
-    display: none;
+    /* display: none; */
+    width: 8px;
+    margin-top: 1px;
+    /* height: 14px; */
   }
+
+  .contactform >div{
+    margin-bottom: 20px;
+  }
+  .contactform .submit-btn{
+    padding: 20px 36px;
+    margin-left: 20px;
+  }
+  .contactform .reasondiv{
+    width: 100%;
+  }
+  .contactform{
+    padding: 0 20px;
+    max-width: 96%;
+    /* display: none; */
+  }
+  .contactform .nameemail, .contactform .phonejob{
+  
+    column-gap: 10px;
+  
+  }
+  .contactform .nameemail input, .phonejob input, .phonejob div{
+    max-width: 90%;
+  }
+  .contactgrid .internship{
+    margin: 30px 70px;
+    margin-bottom: 0;
+  }
+
   /* .contactform{
     padding-left: 5%;
     padding-right: 5%;
@@ -2157,8 +2174,42 @@ grid-template-columns: repeat(7,1fr);
   }
   .newsletter{
     /* grid-column: 1 / 3; }*/
+  .socials{
+    flex-direction: column;
+    row-gap: 12px;
+    align-items: center;
+    
+  }
+  .mainfooter hr{
+    margin-top: 25px;
+  }
+  .footer-list{
+    display: grid;
+    column-gap: 45px;
+    grid-template-columns: repeat(2,1fr);    
+  }
+  .footer-list>li{
+    margin: 0;
+    margin-left: 25px;
+  }
+  .newsletter{
+    margin-top: 30px;
+      grid-column: 1 / 3;
+  }
+  .letterdiv input{
+    width: 100%;
+  }
+  .letterdiv button{
+    left:55%;
+    width: 120px;
+    /* display: none; */
+  }
+  .copydiv{
+    padding-left: 40px;
+  }
   .copydiv>p{
     font-size: 1.1rem;
+    letter-spacing: 0.2px;
   } 
 }
 

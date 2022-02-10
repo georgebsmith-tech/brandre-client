@@ -13,9 +13,9 @@ export default function Nav() {
             </div>
             <Link href='p1 text-white'><a className='contactLink'>Contact</a></Link>
             <div className='harmburger pointer'>
-                <span className="bar" style={{width:'38px'}}></span>
-                <span className="bar" style={{width:'32px', marginLeft:'8px'}}></span>
-                <span className="bar" style={{width:'24px', marginLeft:'16px'}}></span>
+                <span className="bar" style={{width:'34px'}}></span>
+                <span className="bar" style={{width:'30px', marginLeft:'4px'}}></span>
+                <span className="bar" style={{width:'26px', marginLeft:'8px'}}></span>
             </div>
         </div>  
       </div>

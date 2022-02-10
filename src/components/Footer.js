@@ -28,7 +28,7 @@ export default function Footer() {
                     <hr className='bgblue'/>
                 </div>
                 <ul className='footer-list'>
-                    <li>
+                    <li className='companyinfo'>
                         <p>Company Info</p>
                         <ul>
                             <li>About Us</li>
@@ -37,7 +37,7 @@ export default function Footer() {
                             <li>Teams</li>
                         </ul>
                     </li>
-                    <li>
+                    <li className='features'>
                         <p>Features</p>
                         <ul>
                             <li>Web/ app dev</li>

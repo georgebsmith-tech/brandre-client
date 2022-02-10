@@ -126,7 +126,7 @@ export default function Home() {
           <p className='text-white opensans'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
         <div className='contactdiv'>
-          <h4 >Contact Us</h4>
+          <h4 >Contact Us</h4> 
           <div className='contactgrid'>
             <div>
               <h4 className='monte text-white'>Got a project? Get in touch with us now! </h4>
