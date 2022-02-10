@@ -2024,7 +2024,6 @@ grid-template-columns: repeat(7,1fr);
     display: block;
   }
   .teamdiv>h4{
-    /* padding: 0; */
     font-size: 3.3rem;
     margin: 0 100px;
     margin-bottom: 20px;
