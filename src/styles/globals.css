@@ -8,7 +8,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-
+  align-items: flex-start;
 }
 input:focus{
   outline: none ;
@@ -44,12 +44,15 @@ html{
   padding-left: 30px;
   padding-right: 30px;
 }
+
 .navLinks{
   display: grid;
-  /* background: red; */
+  /* backgrou: red; */
   grid-template-columns:repeat(3,1fr);
   padding: 10px;
 }
+
+
 .navMajLinks{
   /* background: white; */
   display: flex;
@@ -988,14 +991,6 @@ top: 5px;
   color:#BDBDBD
 }
 
-.harmburger{
-  align-items: center;
-}
-.harmburger{
-  margin: auto;
-  justify-self: flex-end;
-   padding: 0 4px; 
-}
 .bar{
   background-color: #FFFFFF;
   height: 4px;
@@ -1827,23 +1822,59 @@ grid-template-columns: repeat(7,1fr);
   .navDiv{
     padding: 20px 0;
     padding-left: 20px;
-    padding-right:40px;
-    
+    padding-right: 40px;
+    justify-content: space-around;
+    /* padding-right:40px; */
+    /* overflow: scroll; */
+  }
+  .navLinks:first-child{
+    display: none;
   }
   .navLinks{
-    display: block;
-    justify-self: end;
+    /* display: none; */
+    margin-top:130px ;
+    margin-bottom: 512px;
+    grid-column: 1 / 3;
+    font-size: 2rem;
+    /* align-self: center; */
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    text-align: center;
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+  .navMajLinks a{
+    padding: 0;
+  }
+  .contactLink{
+    font-size: unset;
+    padding: 12px 43px;
+    margin: 0;
+    margin-top: 26px;
+    justify-self: center;
   }
   .navMajLinks{
-    display: none;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    row-gap: 26px;
+    margin-bottom: 26px;
+    font-size: unset;
+    /* flex-direction: column;
+    margin: 2px;
+    column-gap: 0;
+    align-self: center;
+    align-items: center;
+    background: purple; */
+    
   }
   .harmburger{
     display: block;
+    /* justify-self: end; */
     margin-top: 15px;
+    justify-self: end;
   }
-  .contactLink{
-  display: none;
-  }
+
   .welcomediv{
     /* height: 100vh; */
     /* height:70vh; */
@@ -1955,8 +1986,6 @@ grid-template-columns: repeat(7,1fr);
 
   .headline>div{
     row-gap: 25px;
-    /* margin-left: 105px; */
-    /* align-items: center; */
   }
   .headline>div >p{
     /* padding: 0 200px; */
@@ -1971,17 +2000,7 @@ grid-template-columns: repeat(7,1fr);
 
     /* margin-left: 50px; */
   }
-  /* .headlinedesc{
-    padding: 5%;
-    padding-right: 15%;
-  }
-  .headlinedesc>h2{
-    font-size: 3.3rem;
-    line-height: 80px;
-  }
-  .headlinedesc>p{
-    font-size: 1.9rem;
-  } */
+  
   .aboutimg{
     justify-self: center;
     margin-top: 20px;
@@ -2037,37 +2056,6 @@ grid-template-columns: repeat(7,1fr);
     line-height: 36px;
     
   }
-  /* .testiparent .headline>h4{
-    font-size: 2.9rem;
-  }
-  .testiparent .headline>p{
-    padding-right: 15%;
-    padding-left: 15%;
-  }
-  .testi{
-    grid-template-columns: none;
-    padding-left: 10px;
-    column-gap: 15px;
-    grid-auto-flow: column;
-    overflow: auto;
-  }
-  .testi .item{
-    width: 80vw;
-  }
-  .clientsdiv{
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .clientsdiv>h4 {
-    font-size: 1.8rem;
-  }
-  .clientsdiv>div {
-    justify-content: space-around;
-    padding: 25px 5%;
-  }
-  .clientsdiv>img{
-    width: 50px;
-  } */
 
   .contactdiv{
     padding: 0;
@@ -2136,43 +2124,6 @@ grid-template-columns: repeat(7,1fr);
     margin-bottom: 0;
   }
 
-  /* .contactform{
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-  .contactform input .reason{
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .contactform input .nameemail{
-    column-gap: 10px;
-  }
-  .contactform input .nameemail>input{
-    width: 43.5vw;
-  }
-  .contactform .selectgrid{
-    display: none;
-  }
-  .phonelinegrid{
-    display: none;
-  }
-  .socials{
-    flex-direction: column;
-    align-items: center;
-    row-gap: 20px;
-    margin-bottom: 20px;
-  }
-  .socials>h5{
-    font-size: 2rem;
-  }
-  footer hr{
-    width: 90%;
-  }
-  .footer-list{
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .newsletter{
-    /* grid-column: 1 / 3; }*/
   .socials{
     flex-direction: column;
     row-gap: 12px;

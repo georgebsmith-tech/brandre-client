@@ -3,14 +3,11 @@ import Link from 'next/link'
 import Nav from '../components/Nav'
 import Welcome from '../components/Welcome'
 import Whatwedo from '../components/Whatwedo'
-// import Projects from '../components/Projects'
 import Skillsets from '../components/Skillsets'
-import Testimonials from '../components/Testimonials'
-// import Team from '../components/Team'
 import Footer from '../components/Footer'
 import ContactForm from '../components/ContactForm'
 // "dev": "(if exist .next rd /s /q .next 2>null) && next dev",
-import {FaArrowCircleDown, FaArrowDown, FaArrowLeft} from 'react-icons/fa'
+import {FaWindowClose, FaArrowLeft} from 'react-icons/fa'
 
 
 export default function Home() {
@@ -84,16 +81,7 @@ export default function Home() {
               <img src="./images/HomePage/social-media.png" alt="" />
               <p>Social Media Marketing</p>
           </div>
-          {/* <div className='headlinedesc'>
-            <h2 className='serif text-red'>We are founded
-                on the principle
-                of creativity and excellence
-            </h2>
-            <p className='inter text-blue-200'>With our expertise, we fuel your social media and create apps that promote engaging experience for your business.</p>
-          </div>
-          <div className='aboutimg'>
-            <img src="./images/HomePage/Group.png" alt=""/>
-          </div> */}
+
         </div>
         <p className='inter expertise'>With our expertise, we fuel your social media and create apps that promote engaging experience for your business.</p>
         <div className='misval'>
@@ -136,39 +124,7 @@ export default function Home() {
             <img src='images/HomePage/Group (1).png' alt="ddd" />
           </div>
         </div>  
-      </div>
-
-      {/* <div className='testiparent bg-light-green'>
-        <div className='headline ct'>
-          <h4 className='text-blue'>What our Clients say</h4>
-          <p className='text-blue-500'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus </p>    
-        </div>
-        <div className='testi'>
-          <Testimonials/>
-        </div>
-        <p className='text-blue-500 connect'>Connect with us on socials to read more Awards and Accolades we have baged!</p>            
-      </div>
-      <div className='clientsdiv'>
-          <h4 className='text-blue'>Clients we have worked with</h4>
-          <div>
-            <img src="images/HomePage/icons/hooli.png" alt="" />
-            <img src="images/HomePage/icons/lyft.png" alt="" />
-            <img src="images/HomePage/icons/leaf.png" alt="" />
-            <img src="images/HomePage/icons/stripe.png" alt="" />
-            <img src="images/HomePage/icons/aws.png" alt=""/>
-            <img src="images/HomePage/icons/teddybear.png" alt=""/>
-          </div>
-
-      </div> */}
-      {/* <div className={`${onTabletOrMobile?'gradient-2':'bg-blue-200'} text-white py50`}>
-        <div className={`${onTabletOrMobile?null:null} mb30`}>
-          <h3 className={`${onTabletOrMobile?'f33':'f66'} poppins ct bold mb10 text-white`}>Meet Our Team</h3>
-          <p className={`${onTabletOrMobile?'f18 lh26 px3':'f22 lh36 px10'} opensans ct text-white`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div className={` ${onTabletOrMobile?'grid2 px5 gapx20':'grid4 px5'} grid gapy20`}>
-          <Team/>
-        </div>
-      </div> */}    
+      </div>  
       <Footer/>
     </div>
   )

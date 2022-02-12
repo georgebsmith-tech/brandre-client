@@ -3,6 +3,7 @@ import {FaSearch} from 'react-icons/fa'
 import Footer from '../components/Footer'
 
 import Nav from '../components/Nav'
+import Project from '../components/Project'
 import SearchTags from '../components/SearchTags'
 import Welcome from '../components/Welcome'
 

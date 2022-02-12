@@ -1,6 +1,4 @@
 import Link from 'next/link'
-   
-
 import {FaArrowCircleRight, FaArrowRight} from 'react-icons/fa'
 
 

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-export default function Projects() {
+export default function Project() {
     const projects=[{
         imgScr:'image 2.png',
         title:'long established',
@@ -24,15 +24,7 @@ export default function Projects() {
                 </div>
                 // <Task task={task} onDelete={onDelete} onToggle={onToggle}/>
             ))}
-            <div className='relative'>
-                <img src={`images/HomePage/${projects[projects.length-1].imgScr}`} className='w300h317' alt=""/>
-                <div className='seemore position-full backdrop'>
-                    <div className='text-white'>
-                        <Link href={'/'}>See more Projects</Link>
-                    </div>
-                    
-                </div>            
-            </div>
+            
         </>               
         
     )

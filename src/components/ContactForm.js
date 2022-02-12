@@ -29,28 +29,6 @@ export default function ContactForm() {
               
             </div>
             <textarea placeholder='Enter your message here describing your job' rows='10'/>
-            {/* <div className='selectgrid'>
-              <div >
-                <input type="text" placeholder='Please Select'/>
-                
-                <button >
-                  <img src="./images/HomePage/icons/caretdown.png" alt="" />
-                </button>
-              </div>
-              <div >
-                <input type="text" placeholder='4:00 Available'/>
-                
-                <button>
-                  <img src="./images/HomePage/icons/caretdown.png" alt=""/>
-                </button>
-              </div>
-              
-            </div>
-            <div className='phonelinegrid'>
-              <input type="text" placeholder='+234' className='ctrycode'/>
-              <input type="text" placeholder='08166453677' className='phone'/>
-            </div> */}
-
             <Link href='/'>
                <button className='submit-btn text-white'>Get in touch</button>
             </Link>
