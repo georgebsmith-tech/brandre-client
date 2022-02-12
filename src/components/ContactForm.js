@@ -20,7 +20,7 @@ export default function ContactForm() {
             <div className='phonejob'>
               <input type="text" placeholder='Enter Phone Number'/>
               {/* <input type="text" placeholder='Select job category'/> */}
-              <div className='flex'>
+              <div className='flex bg-red jobgroup'>
                 <input type="text" className='min-w-full' placeholder='Select job category'/>
                 <button className='job-caret'>
                   <img src="./images/HomePage/icons/caretdown.png" alt=""/>

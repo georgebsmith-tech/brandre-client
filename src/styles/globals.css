@@ -572,37 +572,8 @@ html{
 .reasondiv, .phonejob>div{
   align-items: flex-start;
 }
-/* .contactform .selectgrid{
-  column-gap: 20px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: 20px;
-} */
-/* .selectgrid> div{
-  position: relative;
-}
-.selectgrid>div>button{
-  background: transparent;
-  position: absolute;
-  border: none;
-  left: 90%;
-  margin-top: 10px;
-}
-.selectgrid>div>input{
+.jobgroup input{
   width: 100%;
-}
-.phonelinegrid{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 10px;
-  margin-top: 20px;
-}
-.ctrycode{
-  width: 23.5vw;
-  text-align: center;
-} */
-.phone{
-  width: 62.5vw;
 }
 .contactform textarea{
   width: 100%;
@@ -2108,7 +2079,7 @@ grid-template-columns: repeat(7,1fr);
   }
   .contactform{
     padding: 0 20px;
-    max-width: 96%;
+    /* max-width: 96%; */
     /* display: none; */
   }
   .contactform .nameemail, .contactform .phonejob{
@@ -2117,7 +2088,8 @@ grid-template-columns: repeat(7,1fr);
   
   }
   .contactform .nameemail input, .phonejob input, .phonejob div{
-    max-width: 90%;
+    /* max-width: 90vw; */
+    min-width: 0;
   }
   .contactgrid .internship{
     margin: 30px 70px;
@@ -2127,8 +2099,17 @@ grid-template-columns: repeat(7,1fr);
   .socials{
     flex-direction: column;
     row-gap: 12px;
-    align-items: center;
+    /* align-items: center; */
+    justify-content: unset;
     
+  }
+  .socials>h5{
+    align-self: center;
+  }
+  .socialdiv{
+    /* background-color: #040055; */
+    margin: 0 70px;
+    column-gap: 25px;
   }
   .mainfooter hr{
     margin-top: 25px;
