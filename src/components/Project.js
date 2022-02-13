@@ -4,18 +4,6 @@ import ProjectShow from './ProjectShow'
 
 export default function Project({show, onShow}) {
     // const [showProject,setShowProject]=useState(false)
-    const [shown,setShown]=useState(false);
-
-    const changeShow=()=>{
-        console.log('yes it is not')
-        console.log(showProject)
-        setShowProject(false)
-        
-    }
-    const onCloses=()=>{
-        console.log('wydgdduh')
-        setShown(!shown)        
-     }
     const projects=[{
         imgScr:'image 2.png',
         title:'long established',

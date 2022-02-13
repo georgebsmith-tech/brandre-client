@@ -1,7 +1,6 @@
-    if(isBrowser){
-        return ReactDOM.createPortal(
-            projContent,document.getElementById("modal-root")
-        )
-    }else{
-        return null;
-    }
+mobile nav row-gap
+gap with navmajlinks and contactLink
+
+searchgeid column and row gap
+projectitem padding bottom ..... 
+button project

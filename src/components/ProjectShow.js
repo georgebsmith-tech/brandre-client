@@ -62,6 +62,45 @@ export default function ProjectShow({show,closeIt}) {
                             <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt aliquip ex ea commodo consequat. Duis aute irure dolor in cupidatat laboris commodo consequat.</p>
                             <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt aliquip ex ea commodo consequat. Duis aute irure dolor in cupidatat laboris commodo consequat.</p>
                         </div>
+                        <div className='finaldetails'>
+                           <div className='finalwords'>
+                                <div className='summary'>
+                                    <h5>Yuridik shaxslar uchun</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat venenatis nibh porttitor sem ante. Auctor tincidunt ultricies tortor felis commodo sed at. Faucibus purus purus diam quis aliquet libero parturient sed. </p>
+                                </div>
+                                <div className='summgrid'>
+                                    <Summary/>
+                                </div>
+                            </div>
+                            <img src="./images/ProjectPage/image 3.png" alt="" className='soloimg'/>
+                        </div> 
+                        <Link href={"#"}>
+                            <a href="" className='showproj'>Show project</a>
+                        </Link>
+                        {/* <div className='projdetails'>
+                            <h2>lorem ipsum</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt aliquip ex ea commodo consequat. Duis aute irure dolor in cupidatat laboris commodo consequat.</p>
+                        </div>
+                        <div className='samplefinal'>
+                            <div className='s3group'>
+                                <img src="./images/ProjectPage/Rectangle 14.png" alt="" />
+                                <div className='s3groupgroup'>
+                                    <img src="./images/ProjectPage/Rectangle 15.png" alt="" />
+                                    <img src="./images/ProjectPage/Rectangle 15.png" alt="" />
+                                </div>
+                            </div>
+                            <div className='s3group2'>
+                                <h2>Projects</h2>
+                                <img src="./images/ProjectPage/Rectangle 12.png" alt="" />
+                            </div>
+                        </div>
+                        <div className='projdetails2'>
+                            <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt aliquip ex ea commodo consequat. Duis aute irure dolor in cupidatat laboris commodo consequat.</p>
+                            <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt aliquip ex ea commodo consequat. Duis aute irure dolor in cupidatat laboris commodo consequat.</p>
+                            <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt aliquip ex ea commodo consequat. Duis aute irure dolor in cupidatat laboris commodo consequat.</p>
+                        </div>
 
                         <div className='finaldetails'>
                            <div className='finalwords'>
@@ -77,7 +116,7 @@ export default function ProjectShow({show,closeIt}) {
                                 </Link>
                             </div>
                             <img src="./images/ProjectPage/image 3.png" alt="" />
-                        </div>
+                        </div> */}
                     </div>
                     <div className='arrow'>
                         <img src="./images/ProjectPage/icons/arrowright.png" alt="" />

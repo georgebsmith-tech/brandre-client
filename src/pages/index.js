@@ -15,7 +15,7 @@ export default function Home() {
   
   return (
   
-    <div className='x-hidden'>
+    <div className='x-hidden  relative'>
     {/* <div> */}
       <Nav/>
       <Welcome/>

@@ -28,10 +28,10 @@ function Projects(){
           </div>
           <FaSearch className='searchbtn hideOnSm'/>
         </div>
-        <span className='tagdiv'>
+        <div className='tagdiv'>
           <p>Search Tags:</p>
           <SearchTags/>
-        </span>
+        </div>
         <div className='projectgrid'>
           <Project show={show} onShow={()=>setShow(true)}/>
         </div>
