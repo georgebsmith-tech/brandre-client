@@ -39,7 +39,7 @@ html{
   padding: 10px;
   background: #040055;
   justify-content: space-between;
-  z-index: 55;
+  /* z-index: 55; */
 
   padding-left: 30px;
   padding-right: 30px;
@@ -92,7 +92,7 @@ html{
   padding-top: 26px;
   font-weight: bold;
   top: 5px;
-  z-index: 99;
+  z-index: 30;
 }
 .welcome h2{
   font-weight: bold;
@@ -236,41 +236,8 @@ html{
   padding-right: 24px;
   padding-left: 24px;
 }
-.projectdiv{
-  padding-left:5%;
-  margin-top: 30px;
 
-}
-.projectdiv>h3{
-  font-size: 3.6rem;
-  margin-bottom: 10px;
-  font-weight: 500;
-}
-.projectgrid{
-  display: grid;
-  column-gap: 20px;
-  grid-template-columns: repeat(4, 1fr);
 
-}
-.projectdiv .item{
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.projectdiv .item p{
-  font-weight: bold;
-  font-size: 2rem;
-  margin-left: 5px;
-  margin-top: 10px;
-}
-.seemore{
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-}
-.seemore> div{
-  margin: auto auto;
-  font-size: 2.5rem;
-}
 .skillsetdiv{
   margin-top: 90px;
 }
@@ -696,6 +663,357 @@ footer hr{
   font-family: 'Montserrat', sans-serif;
   font-size: 1.4rem;
 }
+/* Project */
+.searchdiv{
+  margin-top: 90px;
+  margin-left: 109px;
+  margin-right: 222px;
+  margin-bottom: 23px;
+  display: grid;
+
+  /* background: #000; */
+  grid-template-columns: repeat(3, 25% 65% 10%);
+  /* justify-content: space-between; */
+  column-gap: 25px;
+}
+.searchdiv>h4{
+  font-family: 'PT Serif', serif;
+  font-weight: bold;
+  font-size: 3.6rem;
+  color: #5A5A5A;
+}
+.searchdiv input{
+  background: #F1F1F1;
+  border-radius: 31px;
+  /* border: none; */
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  border: 1px solid #BDBDBD;
+  font-family: 'Inter', sans-serif;
+  color:#BDBDBD;
+  padding: 10px;
+  padding-left: 27px;
+  width: 100%;
+}
+.searchdiv .searchbtn{
+  font-size: 30px;
+  align-self: center;
+}
+.tagdiv{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 185px;
+  column-gap: 25px;
+  margin-bottom: 40px;
+}
+.tagdiv>p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  color: #6D6D6D;
+  align-self: center;
+}
+/* .spantags{
+  display: flex;
+  column-gap: 20px;
+  flex-wrap: wrap;
+} */
+.tagdiv .item{
+  padding: 10px 15px;
+  background: #D5D5D5;
+  border-radius: 37px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.4rem;
+  /* line-height: 28px; */
+  /* identical to box height, or 200% */
+
+  text-align: center;
+  letter-spacing: 0.2px;
+
+  color: #545454;
+}
+.projectgrid{
+  display: grid;
+  column-gap: 15px;
+  row-gap: 40px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: 50px;
+  margin-bottom: 105px;
+}
+.projectgrid .item{
+  width: 290px;
+}
+.projectgrid .item img{
+  width: 100%;
+
+}
+.projectgrid .item>p{
+  margin-top: 23px;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #2D3748;
+
+}
+.seemore{
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.projbtn{
+  padding: 10px 36px;
+  align-self: center;
+
+  background: #25A0E7;
+  border-radius: 37px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: center;
+  letter-spacing: 0.2px;
+
+  color: #FFFFFF;
+}
+/* projectshow */
+.showcontainer{
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  /* padding-top: 70px; */
+  padding-bottom: 90px;
+  /* background: yellow; */
+  position: relative;
+}
+.windowclose{
+  position: absolute;
+  right: 80px;
+  top: -50px;
+
+}
+.projectdiv{
+  padding: 0 25px;
+  border-radius: 15px;
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: repeat(3, 85px 85% 85px);
+}
+.projectdiv .arrow{
+  /* background: #040055; */
+  margin-top: 400px;
+}
+.modalbg{
+  padding: 50px 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow-x: hidden;
+  z-index: 33;
+  background-color:rgba(52, 52, 52, 0.726)
+}
+.aboutproj{
+  background: #FFFFFF;
+  padding:0 54px;
+  padding-top: 65px;
+}
+.projsample1{
+  margin-right: 160px;
+}
+.projsample1 img{
+  width: 100%;
+  height: 650px;
+}
+.projsample1 div{
+  position: absolute;
+  top: 0;
+  padding-top: 35px;
+  padding-right: 200px;
+  padding-left: 90px;
+}
+.projsample1 div h2{
+  font-family: 'Poppins', sans-serif;
+  /* 110l 45 */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 9rem;
+  line-height: 133px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+.groupsample{
+  position: absolute;
+  bottom: 0; 
+  right: 0;
+  display: grid;
+  /* padding-left: 50px; */
+  gap: 0;
+  /* background: green; */
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.groupsample div{
+  background: #252B42;
+  justify-self: flex-end;
+  width: 415px;
+
+}
+.groupsample img{
+  width: 415px;
+  /* background: purple; */
+}
+.imagesolo{
+  /* margin-top: 0%; */
+  height: 370px;
+  background: #5D5FEF;
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+.projdetails{
+  margin: 0 50px;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+.projdetails2{
+  margin: 0 50px;
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+.projdetails h2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 9rem;
+  line-height: 133px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  
+  color: #494949;
+  
+}
+.projdetails p, .projdetails2 p{
+  /* justify-self: center; */
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  line-height: 36px;
+
+  color: #A0A0A0;
+
+}
+
+.samplefinal{
+  display: grid;
+  grid-template-columns: repeat(2, 55% 45%);
+}
+.samplefinal img{
+  max-width: 100%;
+}
+.s3group {
+  /* background: red; */
+
+}
+.s3group{
+  display: grid;
+  align-items: stretch;
+  grid-template-rows: repeat(2, 1fr);
+}
+.s3groupgroup{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.s3groupgroup img{
+  height: 100%;
+}
+.s3group2{
+  display: grid;
+  /* background: violet; */
+  /* grid-template-rows: repeat(2, 0% 80%); */
+}
+.s3group2 img{
+  /* height: 420px; */
+  
+}
+.s3group2 h2{
+  /* background: red; */
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 9rem;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  
+  color: #494949;
+}
+.finaldetails{
+  padding-bottom: 75px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.finalwords{}
+.summary h5{
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.summary p{
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 22px;
+
+  color: #000000;
+
+  opacity: 0.7;
+}
+.finaldetails img{}
+.summgrid{
+  display: grid;
+  margin-bottom: 55px;
+  column-gap: 25px;
+  grid-template-columns: repeat(2, 1fr);
+/* column-gap: 43px; */
+}
+.summItem{
+  display: flex;
+  /* background: yellow; */
+  row-gap: -10px;
+  align-items: flex-start;
+  column-gap: 10px;
+}
+.summItem .title{
+  /* font-family: Gilroy; */
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 24px;
+
+  color: #000000;
+}
+.summItem .desc{
+  /* font-family: Roboto; */
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 16px;
+
+  color: #000000;
+
+  opacity: 0.5;
+}
+.showproj{
+  background: #25A0E7;
+  border-radius: 5px;
+  padding: 12px 32px;
+  font-weight: 500;
+font-size: 1.6rem;
+line-height: 19px;
+text-align: center;
+
+color: #FFFFFF;
+}
 .monte{
   font-family: 'Montserrat', sans-serif;
 }
@@ -1028,6 +1346,7 @@ cursor:pointer;
 
 .block{
   display: block;
+  /* background: blue; */
 }
 .mx10{
   margin-left: 10px;
@@ -1909,9 +2228,6 @@ grid-template-columns: repeat(7,1fr);
   .websitediv{
     display: none;
   }
-  .projectdiv{
-    display: none;
-  }
   .skillsetdiv{
     margin-top: 30px;
   }
@@ -2011,7 +2327,7 @@ grid-template-columns: repeat(7,1fr);
     display: none;
   }
   .hideOnLg{
-    display: block;
+    display: unset;
   }
   .teamdiv>h4{
     font-size: 3.3rem;
@@ -2083,9 +2399,7 @@ grid-template-columns: repeat(7,1fr);
     /* display: none; */
   }
   .contactform .nameemail, .contactform .phonejob{
-  
     column-gap: 10px;
-  
   }
   .contactform .nameemail input, .phonejob input, .phonejob div{
     /* max-width: 90vw; */
@@ -2142,5 +2456,65 @@ grid-template-columns: repeat(7,1fr);
     font-size: 1.1rem;
     letter-spacing: 0.2px;
   } 
+  /* Project */
+.searchdiv{
+  margin-top: 37px;
+  margin-left: 33px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: none;
+  row-gap: 5px;
+  column-gap: 0;
+  margin-right: 35px;
+}
+.searchdiv>h4{
+  font-size: 2.4rem;
+}
+.searchdiv .inpbtn{
+  font-size: 16px;
+  margin-left: -30px;
+  align-self: center;
+
+}
+.tagdiv{
+  margin-left: 15px;
+  column-gap: 9px;
+  row-gap: 15px;
+  margin-bottom: 40px;
+}
+.tagdiv>p{
+  margin-right: -2px;
+}
+.tagdiv .item{
+  padding: 10px;
+}
+.projectgrid{
+
+  column-gap: 0px;
+  row-gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 0;
+  margin-bottom: 145px;
+}
+.projectgrid .item{
+  width: 135px;
+  margin: 0 auto;
+}
+.projectgrid .item img{
+  width: 100%;
+
+}
+.projectgrid .item>p{
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+.seemore{
+  margin-bottom: 60px;
+}
+.projbtn{
+  padding: 6px 15px;
+  border-radius: 13px;
+  font-size: 0.9rem;
+}
 }
 

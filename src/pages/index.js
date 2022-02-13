@@ -8,11 +8,13 @@ import Footer from '../components/Footer'
 import ContactForm from '../components/ContactForm'
 // "dev": "(if exist .next rd /s /q .next 2>null) && next dev",
 import {FaWindowClose, FaArrowLeft} from 'react-icons/fa'
+import ToolTip from '../components/ToolTip'
 
 
 export default function Home() {
   
   return (
+  
     <div className='x-hidden'>
     {/* <div> */}
       <Nav/>
