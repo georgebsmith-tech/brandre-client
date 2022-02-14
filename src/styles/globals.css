@@ -67,6 +67,11 @@ html{
   font-size: 1.4rem;
   color:#FFFFFF;
 }
+.sticky{
+  position: sticky;
+  top: 0;
+  /* display: none; */
+}
 .harmburger{
   display: none;
 }
@@ -93,7 +98,7 @@ html{
   padding-top: 26px;
   font-weight: bold;
   top: 5px;
-  z-index: 30;
+  z-index: 33;
 }
 .welcome h2{
   font-weight: bold;
@@ -174,7 +179,8 @@ html{
   font-size: 5.4rem;
 }
 .appservice{
-  position: relative;;
+  position: relative;
+  display: none;
 }
 .appdiv{
   display: flex;
@@ -197,6 +203,54 @@ html{
   border-radius:100px;
 }
 
+.playbutton{
+  position: absolute;
+  width: 120px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto auto;
+}
+
+
+.skillsetdiv{
+  margin-top: 90px;
+}
+
+.skillsetdiv .item{
+
+  padding: 30px 90px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid #707070;
+}
+.skillsetdiv .item >h5{
+  font-size: 3.6rem;
+  font-weight: 400;
+}
+.skillsetdiv .item button{
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+.skillsetdiv .arrow{
+  font-size: 30px;
+}
+.skillsetdiv .isActive{
+  background: #25A0E7;
+}
+.skillsetdiv .isActive h5{
+  color: #0E0A5C;
+  /* font-size: 3.6rem; */
+}
+.skillsetdiv .isActive a{
+  border: 2px solid #0E0A5C;
+  padding: 5px;
+  border-radius:100px;
+}
 .playbutton{
   position: absolute;
   width: 120px;
@@ -238,33 +292,10 @@ html{
   padding-left: 24px;
 }
 
-
-.skillsetdiv{
-  margin-top: 90px;
-}
-
-.skillsetdiv .item{
-  border: 1px solid #707070;
-  padding: 30px 90px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 100%;
-}
-.skillsetdiv:first-child{
+.skillsetdiv .item:first-child{
   /* display: none; */
 }
-.skillsetdiv .item >p{
-  font-size: 3.6rem;
-  font-weight: 400;
-}
-.skillsetdiv .item button{
-  position: relative;
-  border: none;
-}
-.skillsetdiv .arrow{
-  font-size: 30px;
-}
+
 .aboutus{
   /* padding: 5%; */
   padding-top: 80px;
@@ -384,6 +415,7 @@ html{
   font-weight: bold;
   /* margin: 0 150px; */
   margin-bottom: 20px;
+  
 }
 .teamdiv>p{
   font-size: 2.2rem;
@@ -2006,6 +2038,7 @@ grid-template-columns: repeat(7,1fr);
 .relative{
   position: relative;
 }
+
 .d-none{
   display: none;
 }
@@ -2119,6 +2152,7 @@ grid-template-columns: repeat(7,1fr);
     padding-left: 20px;
     padding-right: 40px;
     justify-content: space-around;
+    /* background: red; */
     /* padding-right:40px; */
     /* overflow: scroll; */
   }
@@ -2130,10 +2164,11 @@ grid-template-columns: repeat(7,1fr);
   }
   .navLinks{
     /* display: none; */
+    width: 100vw;
     padding-top: 230px;
     /* padding-top:130px ; */
     padding-bottom: 512px;
-    grid-column: 1 / 3;
+    /* grid-column: 1 / 3; */
     
     font-size: 2rem;
     display: grid;
@@ -2346,9 +2381,15 @@ grid-template-columns: repeat(7,1fr);
   .hideOnLg{
     display: unset;
   }
-  .teamdiv>h4{
+  .flexd{
+    flex-direction: column;
+    padding: 0 100px;
+  }
+  .teamdiv>div>h4{
     font-size: 3.3rem;
-    margin: 0 100px;
+    margin: 0 auto;
+    /* padding: 0 100px; */
+    text-align: center;
     margin-bottom: 20px;
   }
   .teamdiv>p{

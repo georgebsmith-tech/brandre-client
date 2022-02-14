@@ -14,16 +14,16 @@ import ToolTip from '../components/ToolTip'
 export default function Home() {
   
   return (
-  
-    <div className='x-hidden  relative'>
+    <>
+    <Nav/>
+    <div className='x-hidden relative'>
     {/* <div> */}
-      <Nav/>
       <Welcome/>
       <h4 className='word'>You need everything to stand out right!</h4>
       <div className='whatwedo'>
         <Whatwedo/>
       </div>
-      <div className='service'>
+      <div className='service' id='service'>
         <h2 className='serviceh2 ptserif'>Our Services</h2>
         <div className='appservice'>
           <div className='appdiv'>
@@ -33,9 +33,9 @@ export default function Home() {
               <FaArrowLeft size='30' fill='#0E0A5C'/>
             </a>
           </div>
-          <div className='relative'>  
+          <div className='relative w-screen'>  
             <img src="images/HomePage/icons/playvid.png" alt="" className='playbutton'/>
-            <img src="images/HomePage/Brandr hero 03 1 (1).png" alt="ss" className='w-screen max-w-full'/>  
+            <img src="images/HomePage/Brandr hero 03 1 (1).png" alt="ss" className='max-w-full w-full'/>  
           </div>
         </div>
         <div className='websitediv'>
@@ -63,7 +63,7 @@ export default function Home() {
           <Skillsets/>
         </div>
       </div>
-      <div className='aboutus'>
+      <div className='aboutus' id='about'>
         <h4 className='text-blue afterdiv'>ABOUT US</h4>
         <div className='headline'>
           <div>
@@ -110,12 +110,15 @@ export default function Home() {
         </div>
       </div>
       <div className='bg-gray'>
-        <div className='teamdiv'>
+        <div className='teamdiv' id='team'>
           <h4 className='text-white hideOnSm poppins'>Our Team</h4>
-          <h4 className='text-white hideOnLg poppins'>Meet Our Team</h4>
+          <div className='flex flexd'>
+            <h4 className='text-white hideOnLg poppins'>Meet Our Team</h4>
+          </div>
+          
           <p className='text-white opensans'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
-        <div className='contactdiv'>
+        <div className='contactdiv' id='contact'>
           <h4 >Contact Us</h4> 
           <div className='contactgrid'>
             <div>
@@ -129,5 +132,8 @@ export default function Home() {
       </div>  
       <Footer/>
     </div>
+    </>
+
+
   )
 }
