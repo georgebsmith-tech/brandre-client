@@ -1,8 +1,9 @@
 import Link from 'next/link'
-import { useState, useEffect } from 'react'   
+import { useState, useEffect} from 'react'   
 
 function NavLink({classname}){
   const [scrollvar,setScrollvar]=useState('')
+  
   useEffect(()=>{
     if(scrollvar){
       const scrolltoSection=document.getElementById(scrollvar)

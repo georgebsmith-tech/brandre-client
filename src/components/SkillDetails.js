@@ -2,7 +2,7 @@ import Link from 'next/link'
 export default function SkillDetails() {
     
     return (
-        <div>
+        <div className='activeSkillDetails'>
             <div className='relative w-screen'>  
                 <img src="images/HomePage/icons/playvid.png" alt="" className='playbutton'/>
                 <img src="images/HomePage/Brandr hero 03 1 (1).png" alt="ss" className='max-w-full w-full'/>  

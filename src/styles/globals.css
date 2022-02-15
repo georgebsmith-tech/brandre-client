@@ -50,6 +50,7 @@ html{
   /* backgrou: red; */
   grid-template-columns:repeat(3,1fr);
   padding: 10px;
+
 }
 
 
@@ -125,7 +126,7 @@ html{
 }
 .welcomimg >img{
   max-width: 100%;
-
+  width: 100vw;
 }
 
 
@@ -170,6 +171,7 @@ html{
 }
 .service{
   margin-top: 100px;
+  /* overflow-y: hidden; */
 }
 .serviceh2{
   text-align: center;
@@ -232,14 +234,8 @@ html{
   font-size: 3.6rem;
   font-weight: 400;
 }
-.skillsetdiv .item button{
-  position: relative;
-  border: none;
-  cursor: pointer;
-}
-.skillsetdiv .arrow{
-  font-size: 30px;
-}
+
+
 .skillsetdiv .isActive{
   background: #25A0E7;
 }
@@ -247,11 +243,67 @@ html{
   color: #0E0A5C;
   /* font-size: 3.6rem; */
 }
-.skillsetdiv .isActive a{
-  border: 2px solid #0E0A5C;
+.skillsetdiv .item button{
+  cursor: pointer;
+  border: 2px solid #FFFFFF;
   padding: 5px;
   border-radius:100px;
+  background: none;
 }
+.skillsetdiv .isActive button
+{
+  border-color: #0E0A5C;
+  border-right-color: #25A0E7;
+}
+.skillsetdiv .arrow{
+  font-size: 30px;
+  color: #FFFFFF;
+  animation: switch1 1s linear forwards
+}
+@keyframes switch{
+  from{ transform: rotate(0deg);}
+  to{
+    transform: rotate(0.5turn);  
+  }
+}
+@keyframes switch1{
+  /* from{} */
+  from{ transform: rotate(0.5turn);}
+  to{
+    transform: rotate(0deg);  
+  }
+}
+
+.skillsetdiv .isActive .arrow{
+  color: #0E0A5C;
+  animation: switch 1s linear forwards;
+  /* transform: rotate(0.5turn); */
+}
+
+.activeSkillDetails{
+  /* overflow-y: hidden; */
+  position: relative;
+  z-index: -3;
+  animation: projdrop 0.5s linear forwards;
+}
+
+@keyframes drop{
+  /* from{} */
+  0%{ transform: translateY(-20%);}
+  100%{
+    transform: translateY(0);  
+  }
+}
+@keyframes projdrop{
+  /* from{} */
+  0%{ transform: translateY(-20%); opacity: 0;}
+  30%{transform: translateY(-10%); visibility: hidden;}
+  70%{transform: translateY(-5%);}
+  100%{
+    transform: translateY(0); opacity: 1;visibility: visible;  
+  }
+}
+
 .playbutton{
   position: absolute;
   width: 120px;
@@ -2169,6 +2221,7 @@ grid-template-columns: repeat(7,1fr);
     padding-top: 230px;
     /* padding-top:130px ; */
     padding-bottom: 512px;
+    animation: drop 1s linear forwards;
     /* grid-column: 1 / 3; */
     
     font-size: 2rem;
@@ -2217,7 +2270,6 @@ grid-template-columns: repeat(7,1fr);
     margin-top: 15px;
     justify-self: end;
   }
-
   .welcomediv{
     /* height: 100vh; */
     /* height:70vh; */

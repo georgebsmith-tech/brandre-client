@@ -6,11 +6,10 @@ import { useState} from 'react'
 export default function Skillsets() {
     const [activeSkill, setActiveSkill]=useState(0)    
     const skills=[]
-    const fd=()=>{
-        console.log('clicked')
-        setActiveSkill(2)
-        console.log(activeSkill)
-    }
+    // const changeSkill=(e)=>{
+    //     console.log('clicked')
+    //     setActiveSkill(9)
+    // }
     // if(onTabletOrMobile){
     //     skills.push('Application/ Website Development')
     // }
@@ -22,18 +21,22 @@ export default function Skillsets() {
                 <div key={index} className=''>
                     <div className={`item bg-blue-200 skillset ${activeSkill} ${activeSkill==index && ' isActive'}`}>
                         <h5 className='text-white'>{skill}</h5>
-                        {activeSkill!=index?
+                        {/* setActiveSkill(9) */}
+                        <button>
+                            <FaArrowRight className='arrow' onClick={activeSkill==index?()=>setActiveSkill(9):()=>setActiveSkill(index)}/>
+                        </button>
+                        {/* {activeSkill!=index?
                             <button className='bg-blue-200' onClick={()=>setActiveSkill(index)}>
-                                <a className=''><FaArrowRight fill='#FFFFFF' className='arrow'/></a>
+                                <FaArrowRight fill='#FFFFFF' className='arrow'/>
                                 
                                 <img src="images/HomePage/icons/semicircle.png" alt="ss" className='absolute circlepos'/>
                             </button>
                         :
-                            <a onClick={()=>setActiveSkill(9)}>
-                                <FaArrowLeft size='30' fill='#0E0A5C'/>
-                            </a>
+                            <button onClick={()=>setActiveSkill(9)}>
+                                <FaArrowLeft className='arrow' fill='#0E0A5C'/>
+                            </button>
                         
-                        }  
+                        }   */}
                         
                         
                     </div>
